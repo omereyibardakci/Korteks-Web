@@ -1,0 +1,170 @@
+/**
+ * Korteks Design System — Device Mockup Component
+ * iPhone frame for app screenshot presentation.
+ * Accepts real screenshots via <img> or <picture>; empty state until assets exist.
+ */
+
+.device-mockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin: 0;
+}
+
+.device-mockup__frame {
+  position: relative;
+  width: 100%;
+  max-width: 17.5rem;
+  padding: var(--space-2);
+  background: var(--device-frame-bg, var(--color-bg-tertiary));
+  border: 1px solid var(--device-frame-border, var(--color-border-primary));
+  border-radius: 2.75rem;
+  box-shadow: var(--device-shadow, var(--shadow-xl));
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+@media (min-width: 768px) {
+  .device-mockup__frame {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .device-mockup__frame {
+    max-width: 15.625rem;
+  }
+}
+
+.device-mockup__frame:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--device-shadow-hover, var(--shadow-xl));
+}
+
+.device-mockup__notch {
+  position: absolute;
+  inset-block-start: var(--space-3);
+  inset-inline-start: 50%;
+  z-index: 2;
+  width: 5.5rem;
+  height: 1.375rem;
+  background: var(--device-frame-bg, var(--color-bg-tertiary));
+  border-radius: var(--radius-full);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.device-mockup__screen {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  background-color: var(--color-bg-secondary);
+  border-radius: 2.25rem;
+}
+
+.device-mockup__screen img,
+.device-mockup__screen picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.device-mockup__screen img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.device-mockup__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.device-mockup__caption {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  text-align: center;
+  line-height: var(--leading-normal);
+}
+
+/* Shadow variants */
+.device-mockup__frame--shadow-light {
+  --device-shadow: 0 24px 48px rgb(0 0 0 / 8%), 0 8px 16px rgb(0 0 0 / 4%);
+  --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 10%), 0 12px 24px rgb(0 0 0 / 5%);
+}
+
+.device-mockup__frame--shadow-dark {
+  --device-shadow: 0 24px 48px rgb(0 0 0 / 24%), 0 8px 16px rgb(0 0 0 / 16%);
+  --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 28%), 0 12px 24px rgb(0 0 0 / 18%);
+}
+
+/* Theme-aware defaults */
+:root {
+  --device-frame-bg: #e8e8ed;
+  --device-frame-border: #d2d2d7;
+  --device-shadow: 0 24px 48px rgb(0 0 0 / 8%), 0 8px 16px rgb(0 0 0 / 4%);
+  --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 10%), 0 12px 24px rgb(0 0 0 / 5%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --device-frame-bg: #2c2c2e;
+    --device-frame-border: #3a3a3c;
+    --device-shadow: 0 24px 48px rgb(0 0 0 / 32%), 0 8px 16px rgb(0 0 0 / 20%);
+    --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 36%), 0 12px 24px rgb(0 0 0 / 24%);
+  }
+}
+
+[data-theme="dark"] {
+  --device-frame-bg: #2c2c2e;
+  --device-frame-border: #3a3a3c;
+  --device-shadow: 0 24px 48px rgb(0 0 0 / 32%), 0 8px 16px rgb(0 0 0 / 20%);
+  --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 36%), 0 12px 24px rgb(0 0 0 / 24%);
+}
+
+[data-theme="light"] {
+  --device-frame-bg: #e8e8ed;
+  --device-frame-border: #d2d2d7;
+  --device-shadow: 0 24px 48px rgb(0 0 0 / 8%), 0 8px 16px rgb(0 0 0 / 4%);
+  --device-shadow-hover: 0 32px 64px rgb(0 0 0 / 10%), 0 12px 24px rgb(0 0 0 / 5%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .device-mockup__frame {
+    transition: none;
+  }
+
+  .device-mockup__frame:hover {
+    transform: none;
+  }
+}
+
+/* Hide placeholder when a real screenshot is present */
+.device-mockup__screen:has(> img) .device-mockup__placeholder,
+.device-mockup__screen:has(> picture) .device-mockup__placeholder {
+  display: none;
+}
+
+/* Grid layout helper for screenshot rows */
+.device-mockup-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: end;
+}
+
+@media (min-width: 768px) {
+  .device-mockup-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+@media (min-width: 1024px) {
+  .device-mockup-grid {
+    gap: var(--space-10);
+  }
+}
