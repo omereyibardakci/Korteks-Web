@@ -180,8 +180,894 @@
 
   <!-- Main Content -->
   <main id="main-content" class="page__main">
-    <h1 class="visually-hidden">Gizlilik Politikası</h1>
-    <!-- Page content will be implemented later -->
+    <div class="page__content">
+
+      <!-- Page Hero -->
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Konum">
+          <ol class="breadcrumb__list" role="list">
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">Ana Sayfa</a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__link" aria-current="page">Gizlilik Politikası</span>
+            </li>
+          </ol>
+        </nav>
+
+        <header class="page-header page-header--no-border">
+          <p class="page-header__eyebrow">Yasal</p>
+          <h1 class="page-header__title">Gizlilik Politikası</h1>
+          <p class="page-header__description">
+            Korteks uygulamasını kullandığınızda kişisel verilerinizin nasıl toplandığını,
+            kullanıldığını, saklandığını ve korunduğunu açıklar. Bu politika, uygulamanın
+            mevcut sürümünde geçerli uygulamalara dayanır.
+          </p>
+          <div class="page-header__meta">
+            <time datetime="2026-07-25">Son güncelleme: 25 Temmuz 2026</time>
+            <span class="divider--vertical" aria-hidden="true"></span>
+            <span>Sürüm 1.0.0</span>
+          </div>
+        </header>
+      </div>
+
+      <!-- Document Body -->
+      <section class="section section--compact" aria-label="Gizlilik Politikası içeriği">
+        <div class="container">
+          <div class="grid grid--sidebar grid--gap-lg grid--align-start">
+
+            <!-- Sticky Table of Contents (HTML placeholder — sticky styling via future CSS) -->
+            <aside id="toc" aria-label="İçindekiler">
+              <nav class="content-card">
+                <h2 class="footer-links__title">İçindekiler</h2>
+                <ul class="nav__list nav--vertical" role="list">
+                  <li class="nav__item">
+                    <a href="#introduction" class="nav-link">1. Giriş</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#information-we-collect" class="nav-link">2. Topladığımız Bilgiler</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#information-we-do-not-collect" class="nav-link">3. Toplamadığımız Bilgiler</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#how-data-is-used" class="nav-link">4. Verilerin Kullanımı</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#local-storage" class="nav-link">5. Yerel Depolama</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#cloud-storage" class="nav-link">6. Bulut Depolama</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#notifications" class="nav-link">7. Bildirimler</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#third-party-services" class="nav-link">8. Üçüncü Taraf Hizmetler</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#data-retention" class="nav-link">9. Veri Saklama</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#account-deletion" class="nav-link">10. Hesap Silme</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#your-rights" class="nav-link">11. Haklarınız</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#childrens-privacy" class="nav-link">12. Çocukların Gizliliği</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#international-transfers" class="nav-link">13. Uluslararası Aktarım</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#policy-changes" class="nav-link">14. Politika Değişiklikleri</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contact" class="nav-link">15. İletişim</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+
+            <!-- Policy Sections -->
+            <article class="stack stack--10 measure-wide">
+
+              <!-- 1. Introduction -->
+              <section id="introduction" aria-labelledby="introduction-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 1</p>
+                  <h2 class="section-title__heading" id="introduction-heading">Giriş</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Korteks, LGS, YKS, KPSS ve TUS sınavlarına hazırlanan adaylar için deneme takibi,
+                    net hesaplama, konu analizi, çalışma zamanlayıcısı ve istatistik sunan bir iOS
+                    uygulamasıdır. iOS 17.0 veya üzeri sürümlerde kullanılabilir.
+                  </p>
+                  <p>
+                    Bu Gizlilik Politikası, Korteks'i kullandığınızda kişisel verilerinizin nasıl
+                    işlendiğini açıklar. Politika, uygulamanın mevcut sürümünde (1.0.0) geçerli
+                    uygulamalara dayanır. Uygulamada bulunmayan bir özellik bu metinde yer almaz.
+                  </p>
+                  <p>
+                    Korteks kişisel verilerinizi satmaz, reklam amaçlı üçüncü taraf analitik
+                    hizmetleri kullanmaz ve tarama geçmişinizi toplamaz.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 2. Information We Collect -->
+              <section id="information-we-collect" aria-labelledby="collect-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 2</p>
+                  <h2 class="section-title__heading" id="collect-heading">Topladığımız Bilgiler</h2>
+                  <p class="section-title__subtitle">
+                    Aşağıdaki bilgiler yalnızca uygulamanın çalışması için gerekli olduğunda toplanır
+                    ve saklanır.
+                  </p>
+                </div>
+
+                <div class="stack stack--4">
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--accent">Kimlik Doğrulama</span>
+                      <span class="badge badge--neutral">Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">E-posta adresi</h3>
+                    <p class="content-card__excerpt">
+                      Hesap oluşturma ve oturum açma sırasında toplanır. E-posta adresiniz
+                      kimlik doğrulama, şifre sıfırlama ve hesap güvenliği amacıyla kullanılır.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--accent">Kimlik Doğrulama</span>
+                      <span class="badge badge--neutral">Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Hesap kimliği</h3>
+                    <p class="content-card__excerpt">
+                      Hesabınıza atanan benzersiz tanımlayıcıdır. Profil ve sınav verileriniz
+                      bu hesap kimliğiyle ilişkilendirilir.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--info">Profil</span>
+                      <span class="badge badge--neutral">Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Görünen ad (isteğe bağlı)</h3>
+                    <p class="content-card__excerpt">
+                      Profilinizde görüntülenmesini istediğiniz isteğe bağlı bir ad. Uygulama
+                      içinden girebilir veya değiştirebilirsiniz.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--info">Profil</span>
+                      <span class="badge badge--neutral">Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Sınav tercihleri</h3>
+                    <p class="content-card__excerpt">
+                      Hazırlık yaptığınız sınav türü (LGS, YKS, KPSS veya TUS) ve buna bağlı
+                      profil ayarları. Başlangıç kurulumu ve profil düzenleme sırasında toplanır.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--info">Başlangıç</span>
+                      <span class="badge badge--neutral">Yerel ve Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Başlangıç bilgileri</h3>
+                    <p class="content-card__excerpt">
+                      Mevcut seviyeniz, hedefiniz, günlük çalışma hedefiniz ve isteğe bağlı
+                      olarak paylaştığınız çalışma alışkanlıkları (rutin, motivasyon, zorluklar,
+                      zayıf alanlar). Önce cihazınızda geçici olarak saklanır; hesap oluşturduktan
+                      sonra hesabınızla birlikte güvenli şekilde senkronize edilir.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--success">Deneme</span>
+                      <span class="badge badge--neutral">Yerel ve Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Deneme geçmişi</h3>
+                    <p class="content-card__excerpt">
+                      Deneme sınavı tarihi, sınav türü, ders bazında doğru, yanlış ve boş sayıları
+                      ile hesaplanan net puanınız. Cihazınızda saklanır; oturum açıkken hesabınızla
+                      senkronize edilir.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--success">Hedef</span>
+                      <span class="badge badge--neutral">Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Hedefler</h3>
+                    <p class="content-card__excerpt">
+                      Oluşturduğunuz hedeflerin başlığı, türü, hedef değeri, sıklığı, önceliği ve
+                      tarih aralığı. Hesabınızla birlikte bulutta saklanır.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--warning">Bildirim</span>
+                      <span class="badge badge--neutral">Yerel ve Bulut</span>
+                    </div>
+                    <h3 class="content-card__title">Bildirim tercihleri</h3>
+                    <p class="content-card__excerpt">
+                      Bildirimlerin açık veya kapalı durumu, kategori tercihleriniz (çalışma
+                      hatırlatması, hedef, başarım, haftalık özet, sınav geri sayımı, deneme
+                      hatırlatması), sessiz saatler ve günlük hatırlatma saati. Cihazınızda
+                      saklanır; oturum açıkken hesabınızla senkronize edilir.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--neutral">Ayar</span>
+                      <span class="badge badge--neutral">Yalnızca Yerel</span>
+                    </div>
+                    <h3 class="content-card__title">Tema</h3>
+                    <p class="content-card__excerpt">
+                      Açık veya karanlık tema tercihiniz. Yalnızca cihazınızda saklanır;
+                      hesabınıza aktarılmaz.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--neutral">Ayar</span>
+                      <span class="badge badge--neutral">Yalnızca Yerel</span>
+                    </div>
+                    <h3 class="content-card__title">Dil</h3>
+                    <p class="content-card__excerpt">
+                      Türkçe veya English dil tercihiniz. Yalnızca cihazınızda saklanır;
+                      hesabınıza aktarılmaz.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--neutral">Ayar</span>
+                      <span class="badge badge--neutral">Yalnızca Yerel</span>
+                    </div>
+                    <h3 class="content-card__title">Kontrol paneli tercihleri</h3>
+                    <p class="content-card__excerpt">
+                      Kontrol panelindeki düzen ve görünüm tercihleriniz. Yalnızca cihazınızda
+                      saklanır; hesabınıza aktarılmaz.
+                    </p>
+                  </div>
+
+                  <div class="content-card">
+                    <div class="content-card__meta">
+                      <span class="badge badge--success">Çalışma</span>
+                      <span class="badge badge--neutral">Yalnızca Yerel</span>
+                    </div>
+                    <h3 class="content-card__title">Çalışma oturumları</h3>
+                    <p class="content-card__excerpt">
+                      Zamanlayıcı ile kaydettiğiniz çalışma oturumları: başlangıç ve bitiş zamanı,
+                      süre, sınav türü ve tamamlanma durumu. Yalnızca cihazınızda saklanır;
+                      hesabınıza veya sunucularımıza aktarılmaz.
+                    </p>
+                  </div>
+
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 3. Information We Do NOT Collect -->
+              <section id="information-we-do-not-collect" aria-labelledby="not-collect-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 3</p>
+                  <h2 class="section-title__heading" id="not-collect-heading">Toplamadığımız Bilgiler</h2>
+                  <p class="section-title__subtitle">
+                    Korteks, aşağıdaki veri kategorilerini bilinçli olarak toplamaz veya erişim
+                    istemez.
+                  </p>
+                </div>
+
+                <div class="grid grid--2 grid--gap-sm">
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Reklam tanımlayıcıları</h3>
+                    <p class="content-card__excerpt">Reklam amaçlı cihaz tanımlayıcıları toplanmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Kullanım analitiği</h3>
+                    <p class="content-card__excerpt">Üçüncü taraf kullanım analitiği veya davranış izleme hizmetleri kullanılmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">İzleme ve profilleme</h3>
+                    <p class="content-card__excerpt">Reklam izleme veya çapraz uygulama profilleme yapılmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Otomatik çökme raporları</h3>
+                    <p class="content-card__excerpt">Otomatik çökme raporlama hizmeti kullanılmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Kamera</h3>
+                    <p class="content-card__excerpt">Kamera erişimi istenmez ve kullanılmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Mikrofon</h3>
+                    <p class="content-card__excerpt">Mikrofon erişimi istenmez ve kullanılmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Konum</h3>
+                    <p class="content-card__excerpt">Konum verisi toplanmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Kişiler</h3>
+                    <p class="content-card__excerpt">Kişiler listenize erişilmez.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Fotoğraf arşivi</h3>
+                    <p class="content-card__excerpt">Fotoğraf veya medya kütüphanesine erişilmez.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Sağlık verisi</h3>
+                    <p class="content-card__excerpt">Sağlık ve fitness verisi toplanmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Ödeme bilgileri</h3>
+                    <p class="content-card__excerpt">Uygulama içi ödeme veya kredi kartı bilgisi toplanmaz. Mevcut sürümde satın alma özelliği bulunmaz.</p>
+                  </div>
+                  <div class="content-card content-card--compact content-card--borderless">
+                    <h3 class="content-card__title">Tarama geçmişi</h3>
+                    <p class="content-card__excerpt">Web tarama geçmişi veya internet kullanım verisi toplanmaz.</p>
+                  </div>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 4. How Your Data Is Used -->
+              <section id="how-data-is-used" aria-labelledby="usage-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 4</p>
+                  <h2 class="section-title__heading" id="usage-heading">Verileriniz Nasıl Kullanılır</h2>
+                </div>
+                <div class="prose">
+                  <p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılır:</p>
+                </div>
+                <ul class="stack stack--4" role="list">
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Kimlik doğrulama</h3>
+                      <p class="feature-card__description">E-posta ve şifre ile güvenli oturum açma, şifre sıfırlama ve hesap güvenliği.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Bulut senkronizasyonu</h3>
+                      <p class="feature-card__description">Profil, deneme, hedef ve bildirim tercihlerinin cihazlar arasında eşitlenmesi.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Hedef takibi</h3>
+                      <p class="feature-card__description">Belirlediğiniz hedeflerin kaydedilmesi ve ilerlemenizin görüntülenmesi.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Deneme senkronizasyonu</h3>
+                      <p class="feature-card__description">Deneme sonuçlarınızın cihazınız ile hesabınız arasında senkronize edilmesi.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">İstatistikler</h3>
+                      <p class="feature-card__description">Deneme ve çalışma verilerinizden cihazınızda hesaplanan performans özetleri ve grafikler.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Bildirimler</h3>
+                      <p class="feature-card__description">Tercihlerinize göre cihazınızda yerel bildirimlerin planlanması.</p>
+                    </div>
+                  </li>
+                  <li class="feature-card feature-card--horizontal feature-card--muted">
+                    <div class="feature-card__icon" aria-hidden="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <div>
+                      <h3 class="feature-card__title">Ayarlar</h3>
+                      <p class="feature-card__description">Tema, dil, kontrol paneli düzeni ve dokunsal/sesli geri bildirim tercihlerinizin uygulanması.</p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 5. Local Storage -->
+              <section id="local-storage" aria-labelledby="local-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 5</p>
+                  <h2 class="section-title__heading" id="local-heading">Yerel Depolama</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Korteks, verilerin bir bölümünü yalnızca cihazınızda saklar. Bu sayede
+                    çevrimdışı çalışabilir ve hassas oturum verileri cihaz dışına çıkmaz.
+                  </p>
+                </div>
+
+                <div class="stack stack--4">
+                  <div class="callout callout--note">
+                    <p class="callout__label">Sınav ve çalışma verileri</p>
+                    <p class="callout__content">
+                      Deneme sınavı kayıtlarınız ve çalışma oturumlarınız cihazınızda saklanır.
+                      Deneme kayıtları oturum açtığınızda hesabınızla senkronize edilir;
+                      çalışma oturumları yalnızca cihazınızda kalır.
+                    </p>
+                  </div>
+
+                  <div class="callout callout--note">
+                    <p class="callout__label">Uygulama ayarları</p>
+                    <p class="callout__content">
+                      Tema, dil, bildirim tercihleri, kontrol paneli düzeni, başlangıç bilgileri
+                      taslağı ve aktif zamanlayıcı durumu gibi ayarlar cihazınızda saklanır.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="prose">
+                  <h3>Çevrimdışı kullanım</h3>
+                  <p>
+                    Deneme kayıtları önce cihazınıza kaydedilir; internet bağlantınız olduğunda
+                    hesabınızla senkronize edilir. Çalışma zamanlayıcısını internet bağlantısı
+                    olmadan kullanabilirsiniz.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 6. Cloud Storage -->
+              <section id="cloud-storage" aria-labelledby="cloud-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 6</p>
+                  <h2 class="section-title__heading" id="cloud-heading">Bulut Depolama</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Oturum açtığınızda belirli veriler güvenli bulut hizmetlerimiz aracılığıyla
+                    saklanır ve cihazlar arasında senkronize edilir. Kimlik doğrulama ve veri
+                    depolama için Google Firebase hizmetleri kullanılır.
+                  </p>
+                </div>
+
+                <div class="table-wrapper table-wrapper--striped">
+                  <table>
+                    <caption class="table-wrapper__caption">Veri türlerine göre saklama yeri</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Veri türü</th>
+                        <th scope="col">Nerede saklanır</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>E-posta ve oturum bilgileri</td>
+                        <td>Güvenli bulut hesabınız</td>
+                      </tr>
+                      <tr>
+                        <td>Profil ve başlangıç bilgileri</td>
+                        <td>Hesabınızla birlikte bulutta</td>
+                      </tr>
+                      <tr>
+                        <td>Deneme kayıtları</td>
+                        <td>Cihazınızda ve hesabınızla birlikte bulutta</td>
+                      </tr>
+                      <tr>
+                        <td>Hedefler</td>
+                        <td>Hesabınızla birlikte bulutta</td>
+                      </tr>
+                      <tr>
+                        <td>Bildirim tercihleri</td>
+                        <td>Cihazınızda ve hesabınızla birlikte bulutta</td>
+                      </tr>
+                      <tr>
+                        <td>Çalışma oturumları</td>
+                        <td>Yalnızca cihazınızda</td>
+                      </tr>
+                      <tr>
+                        <td>Tema, dil, kontrol paneli</td>
+                        <td>Yalnızca cihazınızda</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 7. Notifications -->
+              <section id="notifications" aria-labelledby="notifications-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 7</p>
+                  <h2 class="section-title__heading" id="notifications-heading">Bildirimler</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Korteks yalnızca <strong>yerel bildirimler</strong> kullanır. Bildirimler
+                    doğrudan cihazınızda planlanır; sunucudan gönderilen anlık bildirimler
+                    kullanılmaz.
+                  </p>
+                  <p>
+                    Bildirim izni isteğe bağlıdır. İzin vermezseniz uygulamanın temel
+                    işlevleri çalışmaya devam eder; yalnızca hatırlatma bildirimleri
+                    planlanamaz.
+                  </p>
+                  <p>Planlanabilecek bildirim türleri:</p>
+                  <ul>
+                    <li>Çalışma hatırlatması</li>
+                    <li>Hedef bildirimleri</li>
+                    <li>Başarım bildirimleri</li>
+                    <li>Haftalık özet</li>
+                    <li>Sınav geri sayımı</li>
+                    <li>Deneme hatırlatması</li>
+                  </ul>
+                  <p>
+                    <strong>Sessiz saatler:</strong> Belirlediğiniz saat aralığında (varsayılan
+                    22:00–08:00) bildirimler planlanmaz. Bu tercih cihazınızda saklanır;
+                    oturum açıkken hesabınızla senkronize edilir.
+                  </p>
+                  <p>
+                    Mevcut sürümde <strong>uzaktan anlık bildirim</strong> bulunmaz.
+                    Bildirimler yalnızca cihazınızda yerel olarak planlanır.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 8. Third-Party Services -->
+              <section id="third-party-services" aria-labelledby="third-party-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 8</p>
+                  <h2 class="section-title__heading" id="third-party-heading">Üçüncü Taraf Hizmetler</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Korteks, hesap ve veri senkronizasyonu için Google Firebase hizmetlerini
+                    kullanır. Uygulamada başka bir üçüncü taraf hizmeti entegre edilmemiştir.
+                  </p>
+                </div>
+
+                <div class="stack stack--4">
+                  <div class="content-card">
+                    <h3 class="content-card__title">Google Firebase</h3>
+                    <p class="content-card__excerpt">
+                      Kimlik doğrulama ve güvenli veri depolama hizmetleri sağlar.
+                      Hesabınıza bağlı veriler Google'ın bulut altyapısında işlenir.
+                    </p>
+                    <div class="content-card__footer">
+                      <a href="#" class="content-card__link footer-links__link--external" aria-disabled="true">Google Gizlilik Politikası (yakında)</a>
+                    </div>
+                  </div>
+
+                  <div class="content-card">
+                    <h3 class="content-card__title">Kimlik doğrulama hizmeti</h3>
+                    <p class="content-card__excerpt">
+                      E-posta ve şifre ile güvenli oturum açma, şifre sıfırlama ve hesap
+                      yönetimi hizmetlerini sağlar.
+                    </p>
+                    <div class="content-card__footer">
+                      <a href="#" class="content-card__link footer-links__link--external" aria-disabled="true">Firebase Gizlilik Politikası (yakında)</a>
+                    </div>
+                  </div>
+
+                  <div class="content-card">
+                    <h3 class="content-card__title">Bulut veri depolama</h3>
+                    <p class="content-card__excerpt">
+                      Profil, deneme, hedef ve bildirim tercihi verilerinizin güvenli
+                      şekilde saklanması ve cihazlar arasında senkronize edilmesi için kullanılır.
+                    </p>
+                    <div class="content-card__footer">
+                      <a href="#" class="content-card__link footer-links__link--external" aria-disabled="true">Firebase Gizlilik Politikası (yakında)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="callout callout--neutral">
+                  <p class="callout__label">Not</p>
+                  <p class="callout__content">
+                    Google Firebase'in kendi gizlilik uygulamaları vardır. Bu hizmetlerin
+                    verilerinizi nasıl işlediği hakkında ayrıntılı bilgi için Google'ın resmi
+                    gizlilik belgelerine başvurabilirsiniz.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 9. Data Retention -->
+              <section id="data-retention" aria-labelledby="retention-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 9</p>
+                  <h2 class="section-title__heading" id="retention-heading">Veri Saklama</h2>
+                </div>
+                <div class="prose">
+                  <h3>Hesap verileri</h3>
+                  <p>
+                    Hesabınıza bağlı kimlik bilgileri ve profil verileri, hesabınızı silene
+                    kadar saklanır.
+                  </p>
+
+                  <h3>Bulut verileri</h3>
+                  <p>
+                    Profil, deneme, hedef ve bildirim tercihleri oturum açtığınız sürece
+                    bulutta tutulur. Hesap silme işlemi ana hesap kaydınızı kaldırır; ancak
+                    hesabınıza bağlı tüm deneme ve hedef kayıtlarının tamamen silindiği
+                    mevcut sürümde garanti edilmez (bkz. Bölüm 10).
+                  </p>
+
+                  <h3>Yerel veriler</h3>
+                  <p>
+                    Cihazınızda saklanan veriler, siz silene veya uygulamayı cihazdan
+                    kaldırana kadar cihazda kalır. Hesap silme işlemi cihazınızdaki verileri
+                    otomatik olarak temizlemez.
+                  </p>
+
+                  <h3>Çalışma oturumları</h3>
+                  <p>
+                    Yalnızca cihazınızda saklanır. Uygulama içinden tek tek veya toplu olarak
+                    silebilirsiniz.
+                  </p>
+
+                  <h3>Yedekleme</h3>
+                  <p>
+                    Ayarlar bölümündeki yedekleme özelliği ile profil, deneme, hedef ve
+                    tercih verilerinizi dışa aktarabilirsiniz. Yedek dosyası çalışma
+                    oturumlarınızı ve hesap kimliğinizi içermez; e-posta adresiniz yalnızca
+                    profil dışa aktarma seçeneklerinde yer alabilir.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 10. Account Deletion -->
+              <section id="account-deletion" aria-labelledby="deletion-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 10</p>
+                  <h2 class="section-title__heading" id="deletion-heading">Hesap Silme</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Profil bölümündeki Güvenlik ekranından hesabınızı silebilirsiniz.
+                    Silme işlemi geri alınamaz.
+                  </p>
+                  <p>
+                    Güvenlik nedeniyle, hesabınızı silmeden önce yeniden oturum açmanız
+                    istenebilir.
+                  </p>
+                </div>
+
+                <div class="callout callout--tip">
+                  <p class="callout__label">Silinen veriler</p>
+                  <p class="callout__content">
+                    Mevcut uygulama sürümünde hesap silme işlemi şunları kaldırır:
+                  </p>
+                  <ul class="callout__content">
+                    <li>Hesabınıza bağlı oturum açma bilgileri</li>
+                    <li>Buluttaki ana profil kaydınız</li>
+                  </ul>
+                </div>
+
+                <div class="callout callout--warning">
+                  <p class="callout__label">Önemli bilgi</p>
+                  <p class="callout__content">
+                    Mevcut sürümde hesap silme işlemi aşağıdakileri
+                    <strong>otomatik olarak yapmaz</strong>:
+                  </p>
+                  <ul class="callout__content">
+                    <li>Hesabınıza daha önce kaydedilmiş tüm deneme ve hedef kayıtlarının buluttan silinmesi — bu kayıtların bir kısmı sunucuda kalabilir</li>
+                    <li>Cihazınızdaki deneme kayıtları ve çalışma oturumlarının temizlenmesi</li>
+                    <li>Cihazınızdaki uygulama tercihlerinin ve başlangıç bilgileri taslağının temizlenmesi</li>
+                  </ul>
+                  <p class="callout__content">
+                    Bu sınırlamalar gelecekteki sürümlerde ele alınabilir. Hesabınızı sildikten
+                    sonra cihazınızdaki verileri de temizlemek isterseniz uygulamayı kaldırmanız
+                    veya ilgili kayıtları uygulama içinden manuel silmeniz gerekir.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 11. Your Rights -->
+              <section id="your-rights" aria-labelledby="rights-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 11</p>
+                  <h2 class="section-title__heading" id="rights-heading">Haklarınız</h2>
+                  <p class="section-title__subtitle">
+                    Korteks, verileriniz üzerinde kontrol sağlayan araçlar sunar.
+                  </p>
+                </div>
+
+                <div class="grid grid--2 grid--gap-sm">
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Erişim</h3>
+                    <p class="content-card__excerpt">Profil, deneme, hedef ve istatistik verilerinize uygulama içinden erişebilirsiniz.</p>
+                  </div>
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Düzeltme</h3>
+                    <p class="content-card__excerpt">Görünen adınızı ve sınav tercihlerinizi profil düzenleme ekranından güncelleyebilirsiniz.</p>
+                  </div>
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Silme</h3>
+                    <p class="content-card__excerpt">Hesabınızı, deneme kayıtlarınızı ve çalışma oturumlarınızı uygulama içinden silebilirsiniz.</p>
+                  </div>
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Dışa aktarma</h3>
+                    <p class="content-card__excerpt">Profil verilerinizi PDF, görsel veya veri dosyası olarak; istatistiklerinizi PDF veya görsel olarak; yedek dosyanızı veri formatında dışa aktarabilirsiniz.</p>
+                  </div>
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Bildirim izinleri</h3>
+                    <p class="content-card__excerpt">Bildirim iznini iOS Ayarlar uygulamasından veya uygulama içi tercihlerden yönetebilirsiniz.</p>
+                  </div>
+                  <div class="content-card content-card--compact">
+                    <h3 class="content-card__title">Tema ve ayarlar</h3>
+                    <p class="content-card__excerpt">Tema, dil, dokunsal ve sesli geri bildirim ile kontrol paneli düzenini uygulama ayarlarından değiştirebilirsiniz.</p>
+                  </div>
+                </div>
+
+                <div class="prose">
+                  <p>
+                    Sunucudan otomatik veri talep etme özelliği bulunmaz. Verilerinizi
+                    taşımak veya kopyalamak için uygulama içindeki dışa aktarma
+                    seçeneklerini kullanabilirsiniz.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 12. Children's Privacy -->
+              <section id="childrens-privacy" aria-labelledby="children-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 12</p>
+                  <h2 class="section-title__heading" id="children-heading">Çocukların Gizliliği</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Korteks, sınav hazırlığı amacıyla tasarlanmıştır. LGS gibi sınavlara
+                    hazırlanan kullanıcılar 18 yaşın altında olabilir.
+                  </p>
+                  <p>
+                    18 yaşın altındaki kullanıcıların uygulamayı ebeveyn veya yasal vasilerinin
+                    bilgisi ve rehberliğiyle kullanmasını öneririz. Korteks, bilinçli olarak
+                    13 yaşın altındaki çocuklardan kişisel veri toplamayı hedeflemez.
+                  </p>
+                  <p>
+                    Bir ebeveyn veya vasinin, çocuğuna ait verilerin silinmesini talep etmesi
+                    durumunda bizimle iletişime geçebilir (bkz. Bölüm 15).
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 13. International Data Transfers -->
+              <section id="international-transfers" aria-labelledby="transfers-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 13</p>
+                  <h2 class="section-title__heading" id="transfers-heading">Uluslararası Veri Aktarımı</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Hesabınıza bağlı veriler, Google Firebase bulut hizmetleri aracılığıyla
+                    işlenir. Bu veriler Türkiye dışındaki veri merkezlerinde barındırılabilir.
+                  </p>
+                  <p>
+                    Korteks, bulut hizmet sağlayıcısının sunucularının fiziksel konumunu
+                    kontrol etmez. Google'ın veri işleme uygulamaları Google'ın gizlilik
+                    politikasına tabidir.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 14. Changes To This Policy -->
+              <section id="policy-changes" aria-labelledby="changes-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 14</p>
+                  <h2 class="section-title__heading" id="changes-heading">Politika Değişiklikleri</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Bu Gizlilik Politikası, uygulamanın veya yasal gerekliliklerin değişmesi
+                    halinde güncellenebilir. Güncelleme yapıldığında bu sayfadaki "Son güncelleme"
+                    tarihi değiştirilir.
+                  </p>
+                  <p>
+                    Önemli değişiklikler olması halinde uygulama içi bildirim veya bu web
+                    sitesi aracılığıyla bilgilendirme yapılabilir. Güncellemeden sonra uygulamayı
+                    kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.
+                  </p>
+                </div>
+              </section>
+
+              <hr class="divider">
+
+              <!-- 15. Contact -->
+              <section id="contact" aria-labelledby="contact-heading">
+                <div class="section-title section-title--sm">
+                  <p class="section-title__eyebrow">Bölüm 15</p>
+                  <h2 class="section-title__heading" id="contact-heading">İletişim</h2>
+                </div>
+                <div class="prose">
+                  <p>
+                    Gizlilik uygulamalarımız hakkında sorularınız veya talepleriniz için
+                    aşağıdaki kanallardan bize ulaşabilirsiniz.
+                  </p>
+                </div>
+
+                <div class="card card--flat">
+                  <div class="card__body">
+                    <dl class="stack stack--3">
+                      <div>
+                        <dt class="badge badge--neutral">Geliştirici</dt>
+                        <dd class="card__description">[Geliştirici Adı — yakında]</dd>
+                      </div>
+                      <div>
+                        <dt class="badge badge--neutral">E-posta</dt>
+                        <dd class="card__description">
+                          <a href="mailto:privacy@korteks.app">privacy@korteks.app</a>
+                          <span class="text-sm"> (placeholder)</span>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt class="badge badge--neutral">Destek</dt>
+                        <dd class="card__description">
+                          <a href="support.html">Destek sayfası</a>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </section>
+
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <!-- Site Footer -->
