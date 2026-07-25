@@ -1,0 +1,89 @@
+/**
+ * Korteks Design System — Empty State Component
+ * Placeholder UI for missing or unavailable content.
+ */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: clamp(var(--space-10), 6vw, var(--space-16));
+  text-align: center;
+}
+
+.empty-state__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-full);
+  color: var(--color-text-tertiary);
+}
+
+.empty-state__icon svg,
+.empty-state__icon .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.empty-state__title {
+  font-family: var(--font-family-display);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  line-height: var(--leading-tight);
+}
+
+.empty-state__description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 24rem;
+}
+
+.empty-state__description p {
+  color: inherit;
+}
+
+.empty-state__action {
+  margin-block-start: var(--space-2);
+}
+
+.empty-state--compact {
+  padding: var(--space-8);
+  gap: var(--space-3);
+}
+
+.empty-state--compact .empty-state__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.empty-state--compact .empty-state__icon svg,
+.empty-state--compact .empty-state__icon .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.empty-state--compact .empty-state__title {
+  font-size: var(--text-lg);
+}
+
+.empty-state--left {
+  align-items: flex-start;
+  text-align: start;
+}
+
+.empty-state--bordered {
+  border: 1px dashed var(--color-border-primary);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-bg-secondary);
+}
+
+.empty-state--muted .empty-state__icon {
+  background-color: var(--color-bg-tertiary);
+}

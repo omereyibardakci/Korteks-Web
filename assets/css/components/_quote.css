@@ -1,0 +1,75 @@
+/**
+ * Korteks Design System — Quote Component
+ * Blockquote and pull-quote styles.
+ */
+
+.quote {
+  position: relative;
+  padding: var(--space-5) var(--space-6);
+  padding-inline-start: var(--space-8);
+  border-inline-start: 3px solid var(--color-accent);
+  background-color: var(--color-bg-secondary);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
+.quote__text {
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-text-primary);
+  line-height: var(--leading-relaxed);
+}
+
+.quote__text p {
+  color: inherit;
+}
+
+.quote__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-start: var(--space-4);
+}
+
+.quote__author {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  font-style: normal;
+  color: var(--color-text-primary);
+}
+
+.quote__source {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+}
+
+.quote__source::before {
+  content: "— ";
+}
+
+/* Pull quote variant for marketing sections */
+.quote--pull {
+  padding: var(--space-8);
+  padding-inline-start: var(--space-8);
+  border-inline-start-width: 4px;
+  background-color: transparent;
+}
+
+.quote--pull .quote__text {
+  font-size: clamp(var(--text-xl), 3vw, var(--text-2xl));
+  font-weight: var(--font-weight-medium);
+  font-style: normal;
+  letter-spacing: var(--tracking-tight);
+}
+
+.quote--center {
+  text-align: center;
+  border-inline-start: none;
+  border-block-start: 3px solid var(--color-accent);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding-inline-start: var(--space-6);
+  padding-block-start: var(--space-8);
+}
+
+.quote--center .quote__footer {
+  justify-content: center;
+}

@@ -1,0 +1,70 @@
+/**
+ * Korteks Design System — Base Image Styles
+ */
+
+img {
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-block-start: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  text-align: center;
+  line-height: var(--leading-normal);
+}
+
+.avatar {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.avatar--sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.avatar--lg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.avatar--xl {
+  width: 5rem;
+  height: 5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.icon--sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon--lg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon--xl {
+  width: 2rem;
+  height: 2rem;
+}

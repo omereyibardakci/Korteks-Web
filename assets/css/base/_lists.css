@@ -1,0 +1,81 @@
+/**
+ * Korteks Design System — Base List Styles
+ * Styled lists for prose and content areas.
+ */
+
+.prose ul,
+.prose ol,
+.list {
+  padding-inline-start: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.prose ul,
+.list--unordered {
+  list-style-type: disc;
+}
+
+.prose ol,
+.list--ordered {
+  list-style-type: decimal;
+}
+
+.prose li,
+.list__item {
+  line-height: var(--leading-relaxed);
+  padding-block: var(--space-1);
+}
+
+.prose li::marker,
+.list__item::marker {
+  color: var(--color-text-tertiary);
+}
+
+.prose li + li,
+.list__item + .list__item {
+  margin-block-start: var(--space-1);
+}
+
+.prose ul ul,
+.prose ol ol,
+.prose ul ol,
+.prose ol ul,
+.list--nested {
+  margin-block-start: var(--space-2);
+}
+
+.list--none {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list--check {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list--check .list__item {
+  position: relative;
+  padding-inline-start: var(--space-6);
+}
+
+.list--check .list__item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.65em;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: var(--color-success);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M6.5 11.5L2.5 7.5L1 9l5.5 5.5L15 5.5L13.5 4z'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}

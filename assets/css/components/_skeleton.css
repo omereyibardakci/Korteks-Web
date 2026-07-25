@@ -1,0 +1,117 @@
+/**
+ * Korteks Design System — Loading Skeleton Component
+ * Placeholder shimmer for async content loading states.
+ */
+
+.skeleton {
+  display: block;
+  background-color: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-bg-secondary) 50%,
+    transparent 100%
+  );
+  animation: skeleton-shimmer var(--duration-slower) var(--ease-in-out) infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton--text {
+  height: 1em;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton--title {
+  height: 1.5em;
+  width: 60%;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton--paragraph {
+  height: 0.875em;
+  margin-block-end: var(--space-2);
+}
+
+.skeleton--paragraph:last-child {
+  width: 80%;
+  margin-block-end: 0;
+}
+
+.skeleton--avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.skeleton--avatar-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.skeleton--image {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton--button {
+  height: var(--space-11);
+  width: 8rem;
+  border-radius: var(--radius-full);
+}
+
+.skeleton--card {
+  height: 12rem;
+  border-radius: var(--radius-xl);
+}
+
+.skeleton--circle {
+  border-radius: var(--radius-full);
+}
+
+/* Skeleton group layout */
+.skeleton-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.skeleton-group--row {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.skeleton-group--card {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-secondary);
+  border-radius: var(--radius-xl);
+  gap: var(--space-4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+    background: var(--color-bg-secondary);
+    opacity: var(--opacity-50);
+  }
+}

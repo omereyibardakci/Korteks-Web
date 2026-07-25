@@ -1,0 +1,37 @@
+/**
+ * Korteks Design System — Section Subtitle Component
+ * Standalone subtitle text for use below headings.
+ */
+
+.section-subtitle {
+  font-size: clamp(var(--text-base), 1.5vw, var(--text-lg));
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 42rem;
+}
+
+.section-subtitle--center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section-subtitle--sm {
+  font-size: var(--text-base);
+}
+
+.section-subtitle--lg {
+  font-size: var(--text-xl);
+}
+
+.section-subtitle--muted {
+  color: var(--color-text-tertiary);
+}
+
+.section-subtitle--accent {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+
+.section-subtitle--wide {
+  max-width: 56rem;
+}

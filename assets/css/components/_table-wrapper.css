@@ -1,0 +1,71 @@
+/**
+ * Korteks Design System — Table Wrapper Component
+ * Responsive scroll container for data tables.
+ */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-card);
+}
+
+.table-wrapper table {
+  margin: 0;
+}
+
+.table-wrapper thead {
+  background-color: var(--color-bg-secondary);
+}
+
+.table-wrapper th {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.table-wrapper td {
+  font-size: var(--text-sm);
+}
+
+.table-wrapper--borderless {
+  border: none;
+  border-radius: 0;
+}
+
+.table-wrapper--striped tbody tr:nth-child(even) {
+  background-color: var(--color-bg-secondary);
+}
+
+.table-wrapper--compact th,
+.table-wrapper--compact td {
+  padding: var(--space-2) var(--space-3);
+}
+
+.table-wrapper__caption {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  text-align: start;
+  border-block-end: 1px solid var(--color-border-secondary);
+}
+
+.table-wrapper__footer {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  border-block-start: 1px solid var(--color-border-secondary);
+}
+
+/* Scroll shadow indicators */
+.table-wrapper--scroll-hint {
+  background:
+    linear-gradient(to right, var(--color-surface-card) 30%, transparent) left center / 1rem 100% no-repeat local,
+    linear-gradient(to left, var(--color-surface-card) 30%, transparent) right center / 1rem 100% no-repeat local,
+    radial-gradient(farthest-side at 0% 50%, rgb(0 0 0 / 8%), transparent) left center / 0.75rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 8%), transparent) right center / 0.75rem 100% no-repeat scroll;
+}

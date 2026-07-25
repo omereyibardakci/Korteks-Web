@@ -1,0 +1,67 @@
+/**
+ * Korteks Design System — Color Tokens
+ * All color values are defined here and consumed via CSS custom properties.
+ * Light mode is the default; dark mode overrides live in base/_theme.css.
+ */
+
+:root {
+  /* ── Background ─────────────────────────────────────────────── */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f7;
+  --color-bg-tertiary: #e8e8ed;
+  --color-bg-elevated: #ffffff;
+  --color-bg-inverse: #1d1d1f;
+  --color-bg-overlay: rgb(0 0 0 / 40%);
+
+  /* ── Text ─────────────────────────────────────────────────────── */
+  --color-text-primary: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-text-tertiary: #86868b;
+  --color-text-inverse: #f5f5f7;
+  --color-text-link: #0071e3;
+  --color-text-link-hover: #0077ed;
+
+  /* ── Accent & Interactive ─────────────────────────────────────── */
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+  --color-accent-active: #006edb;
+  --color-accent-subtle: rgb(0 113 227 / 10%);
+  --color-accent-subtle-hover: rgb(0 113 227 / 16%);
+
+  /* ── Border ───────────────────────────────────────────────────── */
+  --color-border-primary: #d2d2d7;
+  --color-border-secondary: #e8e8ed;
+  --color-border-focus: #0071e3;
+
+  /* ── Semantic ─────────────────────────────────────────────────── */
+  --color-success: #34c759;
+  --color-success-subtle: rgb(52 199 89 / 12%);
+  --color-success-text: #248a3d;
+
+  --color-warning: #ff9500;
+  --color-warning-subtle: rgb(255 149 0 / 12%);
+  --color-warning-text: #c93400;
+
+  --color-error: #ff3b30;
+  --color-error-subtle: rgb(255 59 48 / 12%);
+  --color-error-text: #d70015;
+
+  --color-info: #007aff;
+  --color-info-subtle: rgb(0 122 255 / 12%);
+  --color-info-text: #0071e3;
+
+  /* ── Surface variants ─────────────────────────────────────────── */
+  --color-surface-card: #ffffff;
+  --color-surface-muted: #f5f5f7;
+  --color-surface-code: #f5f5f7;
+
+  /* ── Focus & Selection ────────────────────────────────────────── */
+  --color-focus-ring: rgb(0 113 227 / 40%);
+  --color-selection-bg: rgb(0 113 227 / 20%);
+  --color-selection-text: #1d1d1f;
+
+  /* ── Scrollbar ────────────────────────────────────────────────── */
+  --color-scrollbar-track: transparent;
+  --color-scrollbar-thumb: #c7c7cc;
+  --color-scrollbar-thumb-hover: #aeaeb2;
+}

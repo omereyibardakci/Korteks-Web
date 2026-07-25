@@ -1,0 +1,59 @@
+/**
+ * Korteks Design System — Flow Layout Utility
+ * Vertical flow with configurable block spacing (ideal for prose).
+ */
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.flow--0 {
+  --flow-space: 0;
+}
+
+.flow--1 {
+  --flow-space: var(--space-1);
+}
+
+.flow--2 {
+  --flow-space: var(--space-2);
+}
+
+.flow--3 {
+  --flow-space: var(--space-3);
+}
+
+.flow--4 {
+  --flow-space: var(--space-4);
+}
+
+.flow--6 {
+  --flow-space: var(--space-6);
+}
+
+.flow--8 {
+  --flow-space: var(--space-8);
+}
+
+/* Tighter flow for headings followed by content */
+.flow--heading > * + * {
+  margin-block-start: var(--flow-space, 0.75em);
+}
+
+.flow--heading > h1 + *,
+.flow--heading > h2 + *,
+.flow--heading > h3 + *,
+.flow--heading > h4 + * {
+  margin-block-start: 0.5em;
+}
+
+.flow--heading > h1,
+.flow--heading > h2,
+.flow--heading > h3,
+.flow--heading > h4 {
+  margin-block-start: 1.5em;
+}
+
+.flow--heading > :first-child {
+  margin-block-start: 0;
+}

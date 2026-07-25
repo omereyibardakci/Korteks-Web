@@ -1,0 +1,68 @@
+/**
+ * Korteks Design System — Section Layout
+ * Vertical page sections with consistent spacing and background variants.
+ */
+
+.section {
+  padding-block: var(--section-padding-y);
+  padding-inline: var(--section-padding-x);
+}
+
+.section--compact {
+  padding-block: clamp(var(--space-8), 4vw, var(--space-12));
+}
+
+.section--spacious {
+  padding-block: clamp(var(--space-16), 8vw, var(--space-32));
+}
+
+.section--secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.section--tertiary {
+  background-color: var(--color-bg-tertiary);
+}
+
+.section--inverse {
+  background-color: var(--color-bg-inverse);
+  color: var(--color-text-inverse);
+}
+
+.section--inverse :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-text-inverse);
+}
+
+.section--inverse p {
+  color: var(--color-text-inverse);
+  opacity: var(--opacity-80);
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: var(--container-narrow);
+}
+
+.section__header--center {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.section__footer {
+  margin-block-start: var(--space-4);
+}

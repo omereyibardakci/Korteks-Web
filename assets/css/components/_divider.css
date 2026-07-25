@@ -1,0 +1,61 @@
+/**
+ * Korteks Design System — Divider Component
+ * Horizontal and vertical content separators.
+ */
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--color-border-secondary);
+  margin-block: var(--space-6);
+}
+
+.divider--primary {
+  background-color: var(--color-border-primary);
+}
+
+.divider--spacious {
+  margin-block: var(--space-10);
+}
+
+.divider--compact {
+  margin-block: var(--space-4);
+}
+
+.divider--flush {
+  margin-block: 0;
+}
+
+.divider--with-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  height: auto;
+  background: none;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.divider--with-text::before,
+.divider--with-text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border-secondary);
+}
+
+.divider--vertical {
+  display: inline-block;
+  width: 1px;
+  height: 1.25rem;
+  margin-block: 0;
+  margin-inline: var(--space-3);
+  vertical-align: middle;
+}
+
+.divider--vertical-full {
+  align-self: stretch;
+  height: auto;
+  min-height: 1.25rem;
+}

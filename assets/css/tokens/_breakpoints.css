@@ -1,0 +1,22 @@
+/**
+ * Korteks Design System — Breakpoint Tokens
+ *
+ * Note: CSS custom properties cannot be used inside @media queries.
+ * These tokens serve as documentation and are referenced in comments
+ * throughout layout and component files. Actual breakpoint values
+ * are repeated in media queries using these exact pixel values.
+ *
+ * sm  → 640px
+ * md  → 768px
+ * lg  → 1024px
+ * xl  → 1280px
+ * 2xl → 1536px
+ */
+
+:root {
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+}

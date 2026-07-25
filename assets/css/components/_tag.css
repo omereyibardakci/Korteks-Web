@@ -1,0 +1,64 @@
+/**
+ * Korteks Design System — Tag Component
+ * Categorization labels for exam types and topics.
+ */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1-5);
+  padding: var(--space-1-5) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-secondary);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  transition: var(--transition-colors);
+}
+
+.tag__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.tag--accent {
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  border-color: transparent;
+}
+
+.tag--outline {
+  background-color: transparent;
+  border-color: var(--color-border-primary);
+}
+
+.tag--removable {
+  padding-inline-end: var(--space-2);
+}
+
+.tag__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-inline-start: var(--space-0-5);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-tertiary);
+  transition: var(--transition-colors);
+}
+
+.tag__remove:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-tertiary);
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}

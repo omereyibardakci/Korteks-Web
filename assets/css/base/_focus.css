@@ -1,0 +1,36 @@
+/**
+ * Korteks Design System — Focus Ring Styles
+ * Consistent, visible focus indicators for keyboard navigation.
+ */
+
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Enhanced focus for interactive components */
+.btn:focus-visible,
+.nav-link:focus-visible,
+.theme-toggle:focus-visible,
+.accordion__trigger:focus-visible,
+.breadcrumb__link:focus-visible,
+.mobile-menu__trigger:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+  box-shadow: var(--shadow-focus);
+}
+
+/* Remove focus ring for mouse users who don't need it */
+:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Card links — inset focus ring */
+.card--interactive:focus-visible,
+.feature-card:focus-visible,
+.content-card:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: -2px;
+  box-shadow: var(--shadow-focus);
+}

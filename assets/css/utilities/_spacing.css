@@ -1,0 +1,220 @@
+/**
+ * Korteks Design System — Spacing Utilities
+ * Margin, padding, and gap helper classes.
+ */
+
+/* ── Gap ──────────────────────────────────────────────────────────── */
+.gap-0 {
+  gap: var(--space-0);
+}
+
+.gap-1 {
+  gap: var(--space-1);
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-3 {
+  gap: var(--space-3);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-5 {
+  gap: var(--space-5);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
+
+.gap-10 {
+  gap: var(--space-10);
+}
+
+.gap-12 {
+  gap: var(--space-12);
+}
+
+/* ── Margin ───────────────────────────────────────────────────────── */
+.m-0 {
+  margin: var(--space-0);
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.my-auto {
+  margin-block: auto;
+}
+
+.mt-0 {
+  margin-block-start: var(--space-0);
+}
+
+.mt-2 {
+  margin-block-start: var(--space-2);
+}
+
+.mt-4 {
+  margin-block-start: var(--space-4);
+}
+
+.mt-6 {
+  margin-block-start: var(--space-6);
+}
+
+.mt-8 {
+  margin-block-start: var(--space-8);
+}
+
+.mt-12 {
+  margin-block-start: var(--space-12);
+}
+
+.mt-16 {
+  margin-block-start: var(--space-16);
+}
+
+.mb-0 {
+  margin-block-end: var(--space-0);
+}
+
+.mb-2 {
+  margin-block-end: var(--space-2);
+}
+
+.mb-4 {
+  margin-block-end: var(--space-4);
+}
+
+.mb-6 {
+  margin-block-end: var(--space-6);
+}
+
+.mb-8 {
+  margin-block-end: var(--space-8);
+}
+
+.mb-12 {
+  margin-block-end: var(--space-12);
+}
+
+.ml-auto {
+  margin-inline-start: auto;
+}
+
+.mr-auto {
+  margin-inline-end: auto;
+}
+
+/* ── Padding ──────────────────────────────────────────────────────── */
+.p-0 {
+  padding: var(--space-0);
+}
+
+.p-2 {
+  padding: var(--space-2);
+}
+
+.p-4 {
+  padding: var(--space-4);
+}
+
+.p-6 {
+  padding: var(--space-6);
+}
+
+.p-8 {
+  padding: var(--space-8);
+}
+
+.px-4 {
+  padding-inline: var(--space-4);
+}
+
+.px-6 {
+  padding-inline: var(--space-6);
+}
+
+.px-8 {
+  padding-inline: var(--space-8);
+}
+
+.py-4 {
+  padding-block: var(--space-4);
+}
+
+.py-6 {
+  padding-block: var(--space-6);
+}
+
+.py-8 {
+  padding-block: var(--space-8);
+}
+
+.py-12 {
+  padding-block: var(--space-12);
+}
+
+.py-16 {
+  padding-block: var(--space-16);
+}
+
+.pt-0 {
+  padding-block-start: var(--space-0);
+}
+
+.pt-4 {
+  padding-block-start: var(--space-4);
+}
+
+.pt-8 {
+  padding-block-start: var(--space-8);
+}
+
+.pb-0 {
+  padding-block-end: var(--space-0);
+}
+
+.pb-4 {
+  padding-block-end: var(--space-4);
+}
+
+.pb-8 {
+  padding-block-end: var(--space-8);
+}
+
+/* ── Responsive Spacing ───────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .md\:py-16 {
+    padding-block: var(--space-16);
+  }
+
+  .md\:px-8 {
+    padding-inline: var(--space-8);
+  }
+
+  .md\:mt-0 {
+    margin-block-start: var(--space-0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-24 {
+    padding-block: var(--space-24);
+  }
+}

@@ -1,0 +1,14 @@
+/**
+ * Korteks Design System — Container Width Tokens
+ */
+
+:root {
+  --container-xs: 20rem;    /* 320px */
+  --container-sm: 40rem;    /* 640px */
+  --container-md: 48rem;    /* 768px */
+  --container-lg: 64rem;    /* 1024px */
+  --container-xl: 76.25rem; /* 1220px — wide layouts */
+  --container-max: 61.25rem; /* 980px — primary reading width */
+  --container-narrow: 42rem; /* 672px — prose / legal content */
+  --container-padding: clamp(var(--space-4), 4vw, var(--space-8));
+}

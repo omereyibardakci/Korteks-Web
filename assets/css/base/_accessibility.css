@@ -1,0 +1,70 @@
+/**
+ * Korteks Design System — Accessibility Utilities
+ * Global accessibility enhancements and helpers.
+ */
+
+/* Respect user font size preferences */
+html {
+  font-size: 100%;
+}
+
+/* Ensure interactive targets meet 44px minimum (Apple HIG) */
+:where(
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  [role="button"],
+  [role="link"],
+  [tabindex]:not([tabindex="-1"])
+) {
+  touch-action: manipulation;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  :is(a, button, input, select, textarea):focus-visible {
+    outline: 3px solid highlight;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced transparency preference */
+@media (prefers-contrast: more) {
+  :root {
+    --color-border-primary: #86868b;
+    --color-text-secondary: #424245;
+  }
+}
+
+/* Target size for pointer inputs (WCAG 2.5.8) */
+:where(
+  .btn,
+  .nav-link,
+  .theme-toggle,
+  .accordion__trigger,
+  .breadcrumb__link
+) {
+  min-height: var(--space-11);
+  min-width: var(--space-11);
+}
+
+/* Live region styling — visually hidden but available to screen readers */
+[aria-live="polite"],
+[aria-live="assertive"] {
+  /* No visual styles — content announced by assistive technology */
+}
+
+/* Disabled state communication */
+[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: var(--opacity-disabled);
+  pointer-events: none;
+}
+
+/* Invalid form state */
+[aria-invalid="true"] {
+  border-color: var(--color-error);
+}

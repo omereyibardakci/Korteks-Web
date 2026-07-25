@@ -1,0 +1,115 @@
+/**
+ * Korteks Design System — FAQ Accordion Component
+ * Expandable question/answer panels for support content.
+ */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.accordion__item {
+  border: 1px solid var(--color-border-secondary);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-card);
+  overflow: hidden;
+  transition: var(--transition-colors);
+}
+
+.accordion__item:hover {
+  border-color: var(--color-border-primary);
+}
+
+.accordion__item[open],
+.accordion__item--active {
+  border-color: var(--color-border-primary);
+}
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: var(--space-11);
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-family-base);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  text-align: start;
+  background: none;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+  transition: var(--transition-colors);
+}
+
+.accordion__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__trigger::marker {
+  content: none;
+}
+
+.accordion__trigger:hover {
+  color: var(--color-accent);
+}
+
+.accordion__icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-text-tertiary);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.accordion__item[open] .accordion__icon,
+.accordion__item--active .accordion__icon {
+  transform: rotate(180deg);
+  color: var(--color-accent);
+}
+
+.accordion__panel {
+  padding: 0 var(--space-5) var(--space-5);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.accordion__panel p {
+  color: inherit;
+}
+
+.accordion__panel > * + * {
+  margin-block-start: var(--space-3);
+}
+
+.accordion__panel a {
+  color: var(--color-text-link);
+}
+
+/* Borderless variant */
+.accordion--borderless .accordion__item {
+  border-inline: none;
+  border-block-end: 1px solid var(--color-border-secondary);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.accordion--borderless .accordion__item:first-child {
+  border-block-start: 1px solid var(--color-border-secondary);
+}
+
+/* Compact variant */
+.accordion--compact .accordion__trigger {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.accordion--compact .accordion__panel {
+  padding: 0 var(--space-4) var(--space-4);
+  font-size: var(--text-sm);
+}

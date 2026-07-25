@@ -1,0 +1,49 @@
+/**
+ * Korteks Design System — Base Table Styles
+ */
+
+table {
+  width: 100%;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+thead {
+  border-block-end: 2px solid var(--color-border-primary);
+}
+
+th {
+  padding: var(--space-3) var(--space-4);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  text-align: start;
+  white-space: nowrap;
+}
+
+td {
+  padding: var(--space-3) var(--space-4);
+  border-block-end: 1px solid var(--color-border-secondary);
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-block-end: none;
+}
+
+tbody tr:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+tfoot td {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  border-block-start: 2px solid var(--color-border-primary);
+}
+
+caption {
+  padding-block-end: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  text-align: start;
+}

@@ -1,0 +1,68 @@
+/**
+ * Korteks Design System — Pill Component
+ * Rounded capsule labels and filter chips.
+ */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--leading-none);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  transition: var(--transition-all);
+  cursor: default;
+}
+
+.pill--interactive {
+  cursor: pointer;
+}
+
+.pill--interactive:hover {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.pill--active {
+  color: #ffffff;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.pill--active:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.pill--outline {
+  background-color: transparent;
+  border-color: var(--color-border-primary);
+}
+
+.pill--outline.pill--active {
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  border-color: var(--color-accent);
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.pill-group--scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-block-end: var(--space-1);
+  scrollbar-width: none;
+}
+
+.pill-group--scroll::-webkit-scrollbar {
+  display: none;
+}

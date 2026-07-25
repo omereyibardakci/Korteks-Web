@@ -1,0 +1,70 @@
+/**
+ * Korteks Design System — Max Width Utilities (Layout)
+ * Structural max-width constraints for content areas.
+ */
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-prose {
+  max-width: var(--container-narrow);
+}
+
+.max-w-container {
+  max-width: var(--container-max);
+}
+
+.max-w-wide {
+  max-width: var(--container-xl);
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-none {
+  max-width: none;
+}
+
+/* Readable measure for body text (45–75 characters) */
+.measure {
+  max-width: 65ch;
+}
+
+.measure-wide {
+  max-width: 80ch;
+}
+
+.measure-narrow {
+  max-width: 55ch;
+}
+
+/* Center constrained content */
+.mx-auto {
+  margin-inline: auto;
+}
+
+.w-full {
+  width: 100%;
+}

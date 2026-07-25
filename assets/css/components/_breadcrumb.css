@@ -1,0 +1,77 @@
+/**
+ * Korteks Design System — Breadcrumb Component
+ * Hierarchical navigation trail for inner pages.
+ */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  color: var(--color-text-tertiary);
+  opacity: var(--opacity-50);
+  margin-inline: var(--space-1);
+  pointer-events: none;
+}
+
+.breadcrumb__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--space-9);
+  padding-inline: var(--space-1);
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-colors);
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-text-primary);
+}
+
+.breadcrumb__link[aria-current="page"] {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  pointer-events: none;
+}
+
+.breadcrumb__separator {
+  color: var(--color-text-tertiary);
+  opacity: var(--opacity-50);
+  user-select: none;
+}
+
+/* Chevron separator variant */
+.breadcrumb--chevron .breadcrumb__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: var(--color-text-tertiary);
+  opacity: var(--opacity-50);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M6 4l4 4-4 4z'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}

@@ -1,0 +1,80 @@
+/**
+ * Korteks Design System — Footer Links Component
+ * Columnar link groups for the site footer.
+ */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer-links__title {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-wide);
+}
+
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links__item {
+  line-height: var(--leading-normal);
+}
+
+.footer-links__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--space-9);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: var(--transition-colors);
+}
+
+.footer-links__link:hover {
+  color: var(--color-text-primary);
+}
+
+.footer-links__link--external::after {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: currentcolor;
+  opacity: var(--opacity-50);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M9 1h6v6h-1.5V3.56L6.53 10.03 5.47 8.97 12.44 2.5H9V1zM2 3v11h11v-4.5H14V15H1V2h4.5v1H2z'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.footer-links--horizontal .footer-links__list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+}
+
+.footer-links--inline {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+}
+
+.footer-links--inline .footer-links__title {
+  margin-inline-end: var(--space-2);
+}
+
+.footer-links--inline .footer-links__list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+}

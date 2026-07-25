@@ -1,0 +1,91 @@
+/**
+ * Korteks Design System — Theme Toggle Component
+ * Light/dark mode switch button styles.
+ */
+
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--space-11);
+  height: var(--space-11);
+  padding: 0;
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition-all);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+}
+
+.theme-toggle:active {
+  background-color: var(--color-bg-tertiary);
+}
+
+.theme-toggle__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: var(--transition-transform);
+}
+
+/* Show sun in dark mode, moon in light mode */
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+.theme-toggle__icon--moon {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle__icon--sun {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle__icon--moon {
+    display: none;
+  }
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle__icon--sun {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle__icon--moon {
+  display: block;
+}
+
+/* Outlined variant */
+.theme-toggle--outline {
+  border-color: var(--color-border-primary);
+}
+
+.theme-toggle--outline:hover {
+  border-color: var(--color-text-tertiary);
+}
+
+/* Small variant */
+.theme-toggle--sm {
+  width: var(--space-9);
+  height: var(--space-9);
+}
+
+.theme-toggle--sm .theme-toggle__icon {
+  width: 1rem;
+  height: 1rem;
+}

@@ -1,0 +1,39 @@
+/**
+ * Korteks Design System — Container Layout
+ * Centered max-width wrapper with responsive horizontal padding.
+ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.container--wide {
+  max-width: var(--container-xl);
+}
+
+.container--full {
+  max-width: none;
+}
+
+.container--sm {
+  max-width: var(--container-sm);
+}
+
+.container--md {
+  max-width: var(--container-md);
+}
+
+.container--lg {
+  max-width: var(--container-lg);
+}
+
+.container--flush {
+  padding-inline: 0;
+}

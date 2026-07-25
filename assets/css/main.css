@@ -1,0 +1,103 @@
+/**
+ * ==========================================================================
+ * Korteks Design System — Main Stylesheet
+ * ==========================================================================
+ *
+ * Official stylesheet for Korteks-Web.
+ * Import order is intentional — do not rearrange without understanding
+ * the CSS cascade implications.
+ *
+ * Layer order:
+ *   1. Tokens      — CSS custom properties (no visual output)
+ *   2. Base        — Reset, element defaults, global behavior
+ *   3. Layout      — Structural page patterns
+ *   4. Components  — Reusable UI building blocks
+ *   5. Utilities   — Single-purpose helper classes (highest specificity)
+ *
+ * Usage:
+ *   <link rel="stylesheet" href="assets/css/main.css">
+ *
+ * ==========================================================================
+ */
+
+/* ── 1. Design Tokens ──────────────────────────────────────────────────── */
+@import url("tokens/_colors.css");
+@import url("tokens/_typography.css");
+@import url("tokens/_spacing.css");
+@import url("tokens/_radius.css");
+@import url("tokens/_container.css");
+@import url("tokens/_shadows.css");
+@import url("tokens/_transitions.css");
+@import url("tokens/_breakpoints.css");
+@import url("tokens/_z-index.css");
+@import url("tokens/_opacity.css");
+
+/* ── 2. Base Styles ────────────────────────────────────────────────────── */
+@import url("base/_reset.css");
+@import url("base/_typography.css");
+@import url("base/_lists.css");
+@import url("base/_links.css");
+@import url("base/_selection.css");
+@import url("base/_images.css");
+@import url("base/_buttons.css");
+@import url("base/_inputs.css");
+@import url("base/_tables.css");
+@import url("base/_code.css");
+@import url("base/_accessibility.css");
+@import url("base/_focus.css");
+@import url("base/_skip-link.css");
+@import url("base/_reduced-motion.css");
+@import url("base/_scrollbar.css");
+@import url("base/_theme.css");
+@import url("base/_print.css");
+
+/* ── 3. Layout ─────────────────────────────────────────────────────────── */
+@import url("layout/_container.css");
+@import url("layout/_section.css");
+@import url("layout/_grid.css");
+@import url("layout/_header.css");
+@import url("layout/_footer.css");
+@import url("layout/_wrappers.css");
+@import url("layout/_max-width.css");
+
+/* ── 4. Components ─────────────────────────────────────────────────────── */
+@import url("components/_button.css");
+@import url("components/_card.css");
+@import url("components/_badge.css");
+@import url("components/_tag.css");
+@import url("components/_pill.css");
+@import url("components/_feature-card.css");
+@import url("components/_content-card.css");
+@import url("components/_hero.css");
+@import url("components/_page-header.css");
+@import url("components/_breadcrumb.css");
+@import url("components/_section-title.css");
+@import url("components/_section-subtitle.css");
+@import url("components/_divider.css");
+@import url("components/_quote.css");
+@import url("components/_code-block.css");
+@import url("components/_alert.css");
+@import url("components/_callout.css");
+@import url("components/_table-wrapper.css");
+@import url("components/_image.css");
+@import url("components/_accordion.css");
+@import url("components/_footer-links.css");
+@import url("components/_nav-links.css");
+@import url("components/_theme-toggle.css");
+@import url("components/_mobile-menu.css");
+@import url("components/_skeleton.css");
+@import url("components/_empty-state.css");
+
+/* ── 5. Utilities ──────────────────────────────────────────────────────── */
+@import url("utilities/_helpers.css");
+@import url("utilities/_flex.css");
+@import url("utilities/_grid.css");
+@import url("utilities/_stack.css");
+@import url("utilities/_cluster.css");
+@import url("utilities/_flow.css");
+@import url("utilities/_spacing.css");
+@import url("utilities/_typography.css");
+@import url("utilities/_shadow.css");
+@import url("utilities/_rounded.css");
+@import url("utilities/_width.css");
+@import url("utilities/_height.css");

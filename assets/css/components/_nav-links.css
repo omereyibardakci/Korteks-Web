@@ -1,0 +1,97 @@
+/**
+ * Korteks Design System — Navigation Links Component
+ * Primary site navigation link styles.
+ */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  display: flex;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--space-11);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  transition: var(--transition-all);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+}
+
+.nav-link--active,
+.nav-link[aria-current="page"] {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-link--accent {
+  color: var(--color-accent);
+}
+
+.nav-link--accent:hover {
+  color: var(--color-accent-hover);
+  background-color: var(--color-accent-subtle);
+}
+
+/* Vertical nav for mobile menu and sidebars */
+.nav--vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav--vertical .nav__list {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-0-5);
+}
+
+.nav--vertical .nav-link {
+  width: 100%;
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+}
+
+/* Mobile nav variant */
+.nav--mobile .nav-link {
+  font-size: var(--text-lg);
+  padding: var(--space-4);
+  min-height: 3rem;
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    gap: var(--space-2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    font-size: var(--text-base);
+    padding: var(--space-2) var(--space-5);
+  }
+}

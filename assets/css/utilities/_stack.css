@@ -1,0 +1,68 @@
+/**
+ * Korteks Design System — Stack Layout Utility
+ * Vertical rhythm with consistent spacing between children.
+ */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * + * {
+  margin-block-start: var(--stack-space, var(--space-4));
+}
+
+.stack--0 {
+  --stack-space: var(--space-0);
+}
+
+.stack--1 {
+  --stack-space: var(--space-1);
+}
+
+.stack--2 {
+  --stack-space: var(--space-2);
+}
+
+.stack--3 {
+  --stack-space: var(--space-3);
+}
+
+.stack--4 {
+  --stack-space: var(--space-4);
+}
+
+.stack--5 {
+  --stack-space: var(--space-5);
+}
+
+.stack--6 {
+  --stack-space: var(--space-6);
+}
+
+.stack--8 {
+  --stack-space: var(--space-8);
+}
+
+.stack--10 {
+  --stack-space: var(--space-10);
+}
+
+.stack--12 {
+  --stack-space: var(--space-12);
+}
+
+.stack--16 {
+  --stack-space: var(--space-16);
+}
+
+/* Recursive stack — spacing applies at every nesting level */
+.stack-recursive {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-recursive * + * {
+  margin-block-start: var(--stack-space, var(--space-4));
+}

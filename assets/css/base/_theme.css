@@ -1,0 +1,152 @@
+/**
+ * Korteks Design System — Dark Mode Theme
+ *
+ * Strategy:
+ * 1. System preference via prefers-color-scheme (default)
+ * 2. Explicit override via [data-theme="dark"] or [data-theme="light"] on <html>
+ *
+ * All overrides use CSS variables — no duplicated component rules.
+ */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    /* ── Background ─────────────────────────────────────────────── */
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #1c1c1e;
+    --color-bg-tertiary: #2c2c2e;
+    --color-bg-elevated: #1c1c1e;
+    --color-bg-inverse: #f5f5f7;
+    --color-bg-overlay: rgb(0 0 0 / 60%);
+
+    /* ── Text ─────────────────────────────────────────────────────── */
+    --color-text-primary: #f5f5f7;
+    --color-text-secondary: #a1a1a6;
+    --color-text-tertiary: #6e6e73;
+    --color-text-inverse: #1d1d1f;
+    --color-text-link: #0a84ff;
+    --color-text-link-hover: #409cff;
+
+    /* ── Accent ───────────────────────────────────────────────────── */
+    --color-accent: #0a84ff;
+    --color-accent-hover: #409cff;
+    --color-accent-active: #0077ed;
+    --color-accent-subtle: rgb(10 132 255 / 15%);
+    --color-accent-subtle-hover: rgb(10 132 255 / 22%);
+
+    /* ── Border ───────────────────────────────────────────────────── */
+    --color-border-primary: #38383a;
+    --color-border-secondary: #2c2c2e;
+    --color-border-focus: #0a84ff;
+
+    /* ── Semantic ─────────────────────────────────────────────────── */
+    --color-success: #30d158;
+    --color-success-subtle: rgb(48 209 88 / 15%);
+    --color-success-text: #30d158;
+
+    --color-warning: #ff9f0a;
+    --color-warning-subtle: rgb(255 159 10 / 15%);
+    --color-warning-text: #ff9f0a;
+
+    --color-error: #ff453a;
+    --color-error-subtle: rgb(255 69 58 / 15%);
+    --color-error-text: #ff453a;
+
+    --color-info: #0a84ff;
+    --color-info-subtle: rgb(10 132 255 / 15%);
+    --color-info-text: #0a84ff;
+
+    /* ── Surface ──────────────────────────────────────────────────── */
+    --color-surface-card: #1c1c1e;
+    --color-surface-muted: #2c2c2e;
+    --color-surface-code: #2c2c2e;
+
+    /* ── Focus & Selection ────────────────────────────────────────── */
+    --color-focus-ring: rgb(10 132 255 / 40%);
+    --color-selection-bg: rgb(10 132 255 / 30%);
+    --color-selection-text: #f5f5f7;
+
+    /* ── Scrollbar ────────────────────────────────────────────────── */
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-thumb: #48484a;
+    --color-scrollbar-thumb-hover: #636366;
+
+    /* ── Shadows (reduced in dark mode) ───────────────────────────── */
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 20%);
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 20%);
+    --shadow-md: 0 4px 6px rgb(0 0 0 / 35%), 0 2px 4px rgb(0 0 0 / 25%);
+    --shadow-lg: 0 10px 15px rgb(0 0 0 / 40%), 0 4px 6px rgb(0 0 0 / 25%);
+    --shadow-xl: 0 20px 25px rgb(0 0 0 / 45%), 0 8px 10px rgb(0 0 0 / 30%);
+    --shadow-inner: inset 0 2px 4px rgb(0 0 0 / 30%);
+  }
+}
+
+/* Explicit dark theme override */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #1c1c1e;
+  --color-bg-tertiary: #2c2c2e;
+  --color-bg-elevated: #1c1c1e;
+  --color-bg-inverse: #f5f5f7;
+  --color-bg-overlay: rgb(0 0 0 / 60%);
+
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #a1a1a6;
+  --color-text-tertiary: #6e6e73;
+  --color-text-inverse: #1d1d1f;
+  --color-text-link: #0a84ff;
+  --color-text-link-hover: #409cff;
+
+  --color-accent: #0a84ff;
+  --color-accent-hover: #409cff;
+  --color-accent-active: #0077ed;
+  --color-accent-subtle: rgb(10 132 255 / 15%);
+  --color-accent-subtle-hover: rgb(10 132 255 / 22%);
+
+  --color-border-primary: #38383a;
+  --color-border-secondary: #2c2c2e;
+  --color-border-focus: #0a84ff;
+
+  --color-success: #30d158;
+  --color-success-subtle: rgb(48 209 88 / 15%);
+  --color-success-text: #30d158;
+
+  --color-warning: #ff9f0a;
+  --color-warning-subtle: rgb(255 159 10 / 15%);
+  --color-warning-text: #ff9f0a;
+
+  --color-error: #ff453a;
+  --color-error-subtle: rgb(255 69 58 / 15%);
+  --color-error-text: #ff453a;
+
+  --color-info: #0a84ff;
+  --color-info-subtle: rgb(10 132 255 / 15%);
+  --color-info-text: #0a84ff;
+
+  --color-surface-card: #1c1c1e;
+  --color-surface-muted: #2c2c2e;
+  --color-surface-code: #2c2c2e;
+
+  --color-focus-ring: rgb(10 132 255 / 40%);
+  --color-selection-bg: rgb(10 132 255 / 30%);
+  --color-selection-text: #f5f5f7;
+
+  --color-scrollbar-track: transparent;
+  --color-scrollbar-thumb: #48484a;
+  --color-scrollbar-thumb-hover: #636366;
+
+  --shadow-xs: 0 1px 2px rgb(0 0 0 / 20%);
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 20%);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 35%), 0 2px 4px rgb(0 0 0 / 25%);
+  --shadow-lg: 0 10px 15px rgb(0 0 0 / 40%), 0 4px 6px rgb(0 0 0 / 25%);
+  --shadow-xl: 0 20px 25px rgb(0 0 0 / 45%), 0 8px 10px rgb(0 0 0 / 30%);
+  --shadow-inner: inset 0 2px 4px rgb(0 0 0 / 30%);
+}
+
+/* Explicit light theme override (forces light even when system is dark) */
+[data-theme="light"] {
+  color-scheme: light;
+}

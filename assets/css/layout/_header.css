@@ -1,0 +1,85 @@
+/**
+ * Korteks Design System — Site Header Layout
+ * Sticky top navigation bar structure.
+ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-header);
+  width: 100%;
+  background-color: var(--color-bg-primary);
+  border-block-end: 1px solid var(--color-border-secondary);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@supports (background-color: color-mix(in srgb, white 80%, transparent)) {
+  .site-header {
+    background-color: color-mix(in srgb, var(--color-bg-primary) 85%, transparent);
+  }
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-height: var(--space-16);
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+  font-family: var(--font-family-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  letter-spacing: var(--tracking-tight);
+}
+
+.site-header__brand:hover {
+  color: var(--color-text-primary);
+  opacity: var(--opacity-hover);
+}
+
+.site-header__logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-md);
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.site-header__nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-header__nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .site-header__mobile-trigger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-header__inner {
+    gap: var(--space-8);
+  }
+}

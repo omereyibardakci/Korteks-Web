@@ -1,0 +1,60 @@
+/**
+ * Korteks Design System — Cluster Layout Utility
+ * Horizontal grouping with wrapping and consistent gap.
+ */
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cluster-space, var(--space-4));
+  align-items: var(--cluster-align, center);
+  justify-content: var(--cluster-justify, flex-start);
+}
+
+.cluster--1 {
+  --cluster-space: var(--space-1);
+}
+
+.cluster--2 {
+  --cluster-space: var(--space-2);
+}
+
+.cluster--3 {
+  --cluster-space: var(--space-3);
+}
+
+.cluster--4 {
+  --cluster-space: var(--space-4);
+}
+
+.cluster--6 {
+  --cluster-space: var(--space-6);
+}
+
+.cluster--8 {
+  --cluster-space: var(--space-8);
+}
+
+.cluster--center {
+  --cluster-justify: center;
+}
+
+.cluster--end {
+  --cluster-justify: flex-end;
+}
+
+.cluster--between {
+  --cluster-justify: space-between;
+}
+
+.cluster--start {
+  --cluster-align: flex-start;
+}
+
+.cluster--stretch {
+  --cluster-align: stretch;
+}
+
+.cluster--nowrap {
+  flex-wrap: nowrap;
+}
