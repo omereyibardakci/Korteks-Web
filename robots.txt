@@ -1,0 +1,7 @@
+# Korteks — https://korteks.app
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+Sitemap: https://korteks.app/sitemap.xml
