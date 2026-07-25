@@ -8,8 +8,9 @@
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 
   <!-- Primary Meta Tags -->
-  <title>Destek — Korteks</title>
-  <meta name="description" content="Korteks uygulaması hakkında yardım alın. Sık sorulan sorular, iletişim bilgileri ve sorun giderme rehberine buradan ulaşabilirsiniz.">
+  <title>Destek Merkezi — Korteks | Yardım ve SSS</title>
+  <meta name="description" content="Korteks iOS uygulaması için yardım merkezi. Sık sorulan sorular, sorun giderme rehberi, sistem gereksinimleri ve iletişim bilgileri. LGS, YKS, KPSS ve TUS hazırlığı.">
+  <meta name="keywords" content="Korteks destek, Korteks yardım, Korteks SSS, deneme takibi, sınav hazırlık, iOS, hesap, senkronizasyon, bildirimler">
   <meta name="author" content="Korteks">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://korteks.app/support.html">
@@ -17,16 +18,16 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://korteks.app/support.html">
-  <meta property="og:title" content="Destek — Korteks">
-  <meta property="og:description" content="Korteks uygulaması hakkında yardım alın. Sık sorulan sorular, iletişim bilgileri ve sorun giderme rehberine buradan ulaşabilirsiniz.">
+  <meta property="og:title" content="Destek Merkezi — Korteks | Yardım ve SSS">
+  <meta property="og:description" content="Korteks hakkında hızlı yanıtlar, sorun giderme adımları ve iletişim bilgileri. Hesap, deneme takibi, bildirimler ve daha fazlası.">
   <meta property="og:image" content="https://korteks.app/assets/images/og/korteks-og.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="Korteks">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Destek — Korteks">
-  <meta name="twitter:description" content="Korteks uygulaması hakkında yardım alın. Sık sorulan sorular, iletişim bilgileri ve sorun giderme rehberine buradan ulaşabilirsiniz.">
+  <meta name="twitter:title" content="Destek Merkezi — Korteks | Yardım ve SSS">
+  <meta name="twitter:description" content="Korteks hakkında hızlı yanıtlar, sorun giderme adımları ve iletişim bilgileri. Hesap, deneme takibi, bildirimler ve daha fazlası.">
   <meta name="twitter:image" content="https://korteks.app/assets/images/og/korteks-og.png">
 
   <!-- Icons -->
@@ -180,8 +181,705 @@
 
   <!-- Main Content -->
   <main id="main-content" class="page__main">
-    <h1 class="visually-hidden">Destek</h1>
-    <!-- Page content will be implemented later -->
+    <div class="page__content">
+
+      <!-- ── 1. Hero ─────────────────────────────────────────────────── -->
+      <section class="section section--spacious" id="support-hero" aria-labelledby="support-hero-heading">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Konum">
+            <ol class="breadcrumb__list" role="list">
+              <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">Ana Sayfa</a>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__link" aria-current="page">Destek</span>
+              </li>
+            </ol>
+          </nav>
+
+          <header class="page-header page-header--no-border">
+            <p class="page-header__eyebrow">Yardım</p>
+            <h1 class="page-header__title" id="support-hero-heading">Destek Merkezi</h1>
+            <p class="page-header__description">
+              Korteks hakkında sık sorulan sorulara yanıt bulun, sorunları kendi başınıza
+              gidermeyi deneyin veya bizimle iletişime geçin. Bu sayfa yalnızca uygulamada
+              mevcut olan özelliklere dayanır.
+            </p>
+            <div class="page-header__meta">
+              <span>E-posta desteği: hafta içi yanıt verilmeye çalışılır</span>
+              <span class="divider--vertical" aria-hidden="true"></span>
+              <span>Sürüm 1.0.0</span>
+            </div>
+            <div class="pill-group">
+              <span class="pill pill--outline">iOS 17+</span>
+              <span class="pill">Türkçe</span>
+              <span class="pill">English</span>
+              <span class="pill">Bulut Senkronizasyonu</span>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <!-- ── 2. Quick Help ───────────────────────────────────────────── -->
+      <section class="section section--secondary" id="quick-help" aria-labelledby="quick-help-heading">
+        <div class="container">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">Hızlı Yardım</p>
+                <h2 class="section-title__heading" id="quick-help-heading">Ne konuda yardım arıyorsunuz?</h2>
+                <p class="section-title__subtitle">
+                  En çok ihtiyaç duyulan konulara doğrudan gidin.
+                </p>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="grid grid--3 grid--gap-lg">
+
+                <a href="#help-getting-started" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Başlarken</h3>
+                  <p class="feature-card__description">Hesap oluşturma, sınav seçimi ve ilk adımlar.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-account" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Hesap ve Oturum</h3>
+                  <p class="feature-card__description">Giriş, şifre sıfırlama ve hesap yönetimi.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-trials" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Deneme Takibi</h3>
+                  <p class="feature-card__description">Deneme kaydetme, net hesaplama ve senkronizasyon.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-statistics" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">İstatistikler</h3>
+                  <p class="feature-card__description">Performans özeti, konu analizi ve dışa aktarma.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-timer" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Çalışma Zamanlayıcısı</h3>
+                  <p class="feature-card__description">Oturum kaydı, çevrimdışı kullanım ve Live Activities.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-notifications" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Bildirimler</h3>
+                  <p class="feature-card__description">İzinler, hatırlatmalar ve sessiz saatler.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-settings" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Ayarlar</h3>
+                  <p class="feature-card__description">Dil, tema, yedekleme ve uygulama tercihleri.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+                <a href="#help-privacy" class="feature-card feature-card--interactive">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Gizlilik</h3>
+                  <p class="feature-card__description">Veri kullanımı, güvenlik ve hesap silme.</p>
+                  <span class="feature-card__link">Konuya git</span>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Quick Help Topic Summaries -->
+            <div class="section__content stack stack--8">
+
+              <article id="help-getting-started" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Başlarken</p>
+                <p class="callout__content">
+                  Korteks'i indirdikten sonra sınav türünüzü seçin, mevcut seviyenizi ve hedefinizi
+                  belirleyin, ardından bir hesap oluşturun. Hesabınız deneme ve profil verilerinizin
+                  cihazlar arasında senkronize edilmesini sağlar. İlk denemenizi kaydettikten sonra
+                  istatistikler ve kontrol paneli otomatik olarak güncellenir.
+                </p>
+              </article>
+
+              <article id="help-account" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Hesap ve Oturum</p>
+                <p class="callout__content">
+                  E-posta ve şifre ile hesap oluşturabilir ve oturum açabilirsiniz. Şifrenizi
+                  unuttuysanız oturum açma ekranındaki sıfırlama bağlantısını kullanın. Hesabınızı
+                  silmek için Profil → Güvenlik bölümüne gidin. Güvenlik nedeniyle silme işleminden
+                  önce yeniden oturum açmanız istenebilir.
+                </p>
+              </article>
+
+              <article id="help-trials" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Deneme Takibi</p>
+                <p class="callout__content">
+                  Deneme sonuçlarınızı doğru, yanlış ve boş sayılarıyla birlikte girin; net puanınız
+                  otomatik hesaplanır. Kayıtlar önce cihazınıza kaydedilir, oturum açıkken hesabınızla
+                  senkronize edilir. LGS, YKS, KPSS ve TUS için uygun net hesaplama kuralları uygulanır.
+                </p>
+              </article>
+
+              <article id="help-statistics" class="callout callout--neutral callout--compact">
+                <p class="callout__label">İstatistikler</p>
+                <p class="callout__content">
+                  Deneme geçmişinizden performans özetleri ve konu analizi görüntülenir. İstatistik
+                  ekranından verilerinizi PDF veya görsel olarak dışa aktarabilirsiniz. Profil
+                  bölümünden de kapsamlı dışa aktarma seçeneklerine ulaşabilirsiniz.
+                </p>
+              </article>
+
+              <article id="help-timer" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Çalışma Zamanlayıcısı</p>
+                <p class="callout__content">
+                  Zamanlayıcı internet bağlantısı olmadan çalışır. Oturumlar yalnızca cihazınızda
+                  saklanır ve hesabınıza aktarılmaz. Aktif oturumlar Live Activities ile kilit
+                  ekranından takip edilebilir.
+                </p>
+              </article>
+
+              <article id="help-notifications" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Bildirimler</p>
+                <p class="callout__content">
+                  Korteks yalnızca cihazınızda planlanan yerel bildirimler kullanır. İzin vermeniz
+                  gerekir. Bildirim tercihlerinizi, sessiz saatlerinizi ve hatırlatma saatinizi
+                  uygulama ayarlarından yönetebilirsiniz. Uzaktan gönderilen anlık bildirimler
+                  mevcut sürümde bulunmaz.
+                </p>
+              </article>
+
+              <article id="help-settings" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Ayarlar</p>
+                <p class="callout__content">
+                  Dil (Türkçe veya English), tema (açık veya karanlık), bildirim tercihleri ve
+                  kontrol paneli düzeni ayarlar bölümünden değiştirilebilir. Yerel yedekleme
+                  özelliği ile profil, deneme ve hedef verilerinizi dışa aktarabilirsiniz.
+                </p>
+              </article>
+
+              <article id="help-privacy" class="callout callout--neutral callout--compact">
+                <p class="callout__label">Gizlilik</p>
+                <p class="callout__content">
+                  Korteks kişisel verilerinizi satmaz, reklam göstermez ve kullanıcı izleme yapmaz.
+                  Ayrıntılı bilgi için
+                  <a href="privacy.html">Gizlilik Politikası</a> sayfasına bakın.
+                </p>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 3. FAQ ──────────────────────────────────────────────────── -->
+      <section class="section" id="faq" aria-labelledby="faq-heading">
+        <div class="container container--narrow">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">SSS</p>
+                <h2 class="section-title__heading" id="faq-heading">Sık Sorulan Sorular</h2>
+                <p class="section-title__subtitle">
+                  En sık sorulan konulara kısa yanıtlar.
+                </p>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="accordion" role="list">
+
+                <details class="accordion__item" id="faq-exams">
+                  <summary class="accordion__trigger">
+                    Hangi sınavlar destekleniyor?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Korteks; LGS, YKS, KPSS ve TUS sınavlarına hazırlanan adaylar için tasarlanmıştır. Her sınav türü için uygun net hesaplama kuralları uygulanır.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-account">
+                  <summary class="accordion__trigger">
+                    Hesap oluşturmam gerekiyor mu?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Deneme ve profil verilerinizin cihazlar arasında senkronize edilmesi için e-posta ve şifre ile bir hesap oluşturmanız gerekir. Çalışma zamanlayıcısı hesap olmadan da kullanılabilir; ancak oturumlar yalnızca o cihazda kalır.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-offline">
+                  <summary class="accordion__trigger">
+                    Korteks'i çevrimdışı kullanabilir miyim?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Evet, kısmen. Deneme kayıtları önce cihazınıza kaydedilir; internet bağlantınız olduğunda hesabınızla senkronize edilir. Çalışma zamanlayıcısı tamamen çevrimdışı çalışır. Bulut senkronizasyonu için internet bağlantısı gereklidir.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-study-sessions">
+                  <summary class="accordion__trigger">
+                    Çalışma oturumlarım nerede saklanır?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Çalışma zamanlayıcısı oturumları yalnızca cihazınızda saklanır. Hesabınıza veya buluta aktarılmaz. Cihaz değiştirdiğinizde bu oturumlar otomatik olarak taşınmaz.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-sync">
+                  <summary class="accordion__trigger">
+                    Denemelerim senkronize ediliyor mu?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Oturum açtığınızda deneme kayıtlarınız cihazınız ile hesabınız arasında senkronize edilir. Yeni bir cihazda oturum açtığınızda daha önce kaydedilmiş denemeleriniz indirilir. İnternet bağlantısı olmadığında kayıtlar cihazınızda bekletilir.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-export">
+                  <summary class="accordion__trigger">
+                    Verilerimi dışa aktarabilir miyim?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Evet. Profil verilerinizi PDF, görsel veya veri dosyası olarak; istatistiklerinizi PDF veya görsel olarak dışa aktarabilirsiniz. Ayarlar bölümünden yerel yedekleme ile profil, deneme ve hedef verilerinizi yedekleyebilirsiniz. Yedek dosyası çalışma oturumlarını içermez.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-ads">
+                  <summary class="accordion__trigger">
+                    Uygulamada reklam var mı?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Hayır. Korteks'te reklam bulunmaz.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-tracking">
+                  <summary class="accordion__trigger">
+                    Korteks kullanıcıları izliyor mu?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Hayır. Korteks reklam izleme, davranış profilleme veya üçüncü taraf analitik hizmetleri kullanmaz. Kişisel verileriniz satılmaz.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-password">
+                  <summary class="accordion__trigger">
+                    Şifremi nasıl sıfırlarım?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Oturum açma ekranındaki "Şifremi Unuttum" bağlantısına dokunun. Kayıtlı e-posta adresinize şifre sıfırlama bağlantısı gönderilir. E-postayı birkaç dakika içinde almazsanız spam klasörünüzü kontrol edin.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-language">
+                  <summary class="accordion__trigger">
+                    Dili nasıl değiştiririm?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Ayarlar bölümünden Türkçe veya English dilini seçebilirsiniz. Dil tercihi cihazınızda saklanır.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-theme">
+                  <summary class="accordion__trigger">
+                    Temayı nasıl değiştiririm?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Ayarlar bölümünden açık veya karanlık temayı seçebilirsiniz. Tema tercihi cihazınızda saklanır ve sistem temanızla uyumlu çalışabilir.</p>
+                  </div>
+                </details>
+
+                <details class="accordion__item" id="faq-delete-account">
+                  <summary class="accordion__trigger">
+                    Hesabımı nasıl silerim?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>Profil → Güvenlik bölümünden hesabınızı silebilirsiniz. İşlem geri alınamaz. Güvenlik nedeniyle yeniden oturum açmanız istenebilir. Hesap silme işlemi cihazınızdaki tüm verileri otomatik olarak temizlemez; ayrıntılar için <a href="privacy.html#account-deletion">Gizlilik Politikası</a> bölümüne bakın.</p>
+                  </div>
+                </details>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 4. Troubleshooting ──────────────────────────────────────── -->
+      <section class="section section--secondary" id="troubleshooting" aria-labelledby="troubleshooting-heading">
+        <div class="container">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">Sorun Giderme</p>
+                <h2 class="section-title__heading" id="troubleshooting-heading">Yaygın sorunlar ve çözümler</h2>
+                <p class="section-title__subtitle">
+                  Aşağıdaki adımları deneyin. Sorun devam ederse destek ekibiyle iletişime geçin.
+                </p>
+              </div>
+            </header>
+
+            <div class="section__content stack stack--4">
+
+              <article class="content-card" id="issue-sign-in">
+                <h3 class="content-card__title">Oturum açamıyorum</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Yanlış e-posta veya şifre; internet bağlantısı yok.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Bilgilerinizi kontrol edin, internet bağlantınızı doğrulayın ve uygulamayı yeniden başlatın. Şifrenizi unuttuysanız sıfırlama bağlantısını kullanın.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Birkaç denemeden sonra hâlâ giriş yapamıyorsanız bizimle iletişime geçin.</p>
+              </article>
+
+              <article class="content-card" id="issue-password">
+                <h3 class="content-card__title">Şifremi unuttum</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Şifre hatırlanmıyor veya sıfırlama e-postası ulaşmadı.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Oturum açma ekranındaki şifre sıfırlama bağlantısını kullanın. E-postayı birkaç dakika bekleyin ve spam klasörünü kontrol edin.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Sıfırlama e-postası 15 dakika içinde gelmezse destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-notifications">
+                <h3 class="content-card__title">Bildirimler çalışmıyor</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Bildirim izni verilmemiş; sessiz saatler aktif; iOS Ayarlar'da bildirimler kapalı.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> iOS Ayarlar → Korteks → Bildirimler yolunu izleyerek izinleri kontrol edin. Uygulama içinde bildirim tercihlerinizi ve sessiz saatlerinizi gözden geçirin. Rahatsız Etmeyin modunun açık olup olmadığını kontrol edin.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Tüm ayarlar doğruysa ve bildirimler hâlâ gelmiyorsa destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-sync">
+                <h3 class="content-card__title">Denemelerim senkronize olmuyor</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> İnternet bağlantısı yok; oturum açılmamış; geçici sunucu gecikmesi.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Oturum açık olduğunuzdan ve internet bağlantınızın çalıştığından emin olun. Uygulamayı kapatıp yeniden açın. Kayıtlar cihazınızda saklanır; bağlantı geldiğinde senkronize edilir.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Birkaç saat sonra hâlâ senkronize olmuyorsa destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-live-activity">
+                <h3 class="content-card__title">Live Activity görünmüyor</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Live Activities izni kapalı; zamanlayıcı aktif değil; iOS sürümü uyumsuz.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> iOS Ayarlar → Korteks → Live Activities iznini kontrol edin. Zamanlayıcıyı başlattığınızdan emin olun. iOS 17.0 veya üzeri gereklidir.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> İzinler açık ve sorun devam ediyorsa cihaz modelinizle birlikte destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-export">
+                <h3 class="content-card__title">Dışa aktarma başarısız oldu</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Yetersiz depolama alanı; paylaşım izni reddedildi; dışa aktarılacak veri yok.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Cihazınızda yeterli boş alan olduğundan emin olun. Paylaşım ekranında hedef uygulamayı seçin. Dışa aktarmadan önce en az bir deneme kaydı olduğunu kontrol edin.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Sorun tekrarlarsa hangi dışa aktarma türünü kullandığınızı belirterek destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-offline">
+                <h3 class="content-card__title">Çevrimdışı kullanımda sorun yaşıyorum</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Bulut senkronizasyonu internet gerektirir; bazı özellikler yalnızca çevrimiçi çalışır.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Deneme kayıtları ve çalışma zamanlayıcısı çevrimdışı kullanılabilir. Bağlantı geldiğinde bekleyen denemeler otomatik senkronize edilir. Hesap oluşturma ve ilk senkronizasyon internet gerektirir.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Çevrimdışı kayıtlar bağlantı sonrası kayboluyorsa destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-language">
+                <h3 class="content-card__title">Dil değişmedi</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Ayar kaydedilmedi; uygulama yeniden başlatılmadı.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Ayarlar bölümünden dili tekrar seçin. Uygulamayı tamamen kapatıp yeniden açın.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Sorun devam ederse destek ekibine yazın.</p>
+              </article>
+
+              <article class="content-card" id="issue-theme">
+                <h3 class="content-card__title">Tema güncellenmedi</h3>
+                <p class="content-card__excerpt"><strong>Olası neden:</strong> Sistem teması öncelikli; ayar uygulanmadı.</p>
+                <p class="content-card__excerpt"><strong>Önerilen çözüm:</strong> Ayarlar bölümünden temayı tekrar seçin. iOS sistem temanızın uygulamayı etkileyip etkilemediğini kontrol edin.</p>
+                <p class="content-card__excerpt"><strong>Destek:</strong> Tema sorunu devam ederse ekran görüntüsüyle birlikte destek ekibine yazın.</p>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 5. System Requirements ──────────────────────────────────── -->
+      <section class="section" id="system-requirements" aria-labelledby="system-requirements-heading">
+        <div class="container container--narrow">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">Sistem</p>
+                <h2 class="section-title__heading" id="system-requirements-heading">Sistem Gereksinimleri</h2>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="table-wrapper table-wrapper--striped">
+                <table>
+                  <caption class="table-wrapper__caption">Korteks uygulama gereksinimleri</caption>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Platform</th>
+                      <td>iPhone (iOS)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Minimum iOS Sürümü</th>
+                      <td>iOS 17.0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Desteklenen Diller</th>
+                      <td>Türkçe, English</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Kimlik Doğrulama</th>
+                      <td>E-posta ve şifre</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bulut Senkronizasyonu</th>
+                      <td>Profil, deneme, hedef ve bildirim tercihleri (oturum açıkken)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Çevrimdışı Destek</th>
+                      <td>Deneme kaydı ve çalışma zamanlayıcısı (sınırlı)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Live Activities</th>
+                      <td>Çalışma zamanlayıcısı için desteklenir (iOS 17.0+)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mevcut Uygulama Sürümü</th>
+                      <td>1.0.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 6. Data & Backup ──────────────────────────────────────────── -->
+      <section class="section section--secondary" id="data-backup" aria-labelledby="data-backup-heading">
+        <div class="container container--narrow">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">Veri</p>
+                <h2 class="section-title__heading" id="data-backup-heading">Veri ve Yedekleme</h2>
+                <p class="section-title__subtitle">
+                  Verilerinizin nerede saklandığını ve nasıl yedekleyebileceğinizi öğrenin.
+                </p>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="grid grid--2 grid--gap-sm">
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Bulut senkronizasyonu</h3>
+                  <p class="content-card__excerpt">Oturum açtığınızda profil, deneme, hedef ve bildirim tercihleriniz cihazlar arasında senkronize edilir.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Çevrimdışı kullanım</h3>
+                  <p class="content-card__excerpt">Deneme kayıtları ve çalışma zamanlayıcısı internet olmadan kullanılabilir. Senkronizasyon bağlantı gerektirir.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Çalışma oturumları</h3>
+                  <p class="content-card__excerpt">Zamanlayıcı oturumları yalnızca cihazınızda saklanır. Başka cihazlara otomatik taşınmaz.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Yerel yedekleme</h3>
+                  <p class="content-card__excerpt">Ayarlar bölümünden profil, deneme ve hedef verilerinizi yedek dosyası olarak dışa aktarabilirsiniz.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">PDF dışa aktarma</h3>
+                  <p class="content-card__excerpt">Profil ve istatistik verilerinizi PDF olarak paylaşabilirsiniz.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Görsel dışa aktarma</h3>
+                  <p class="content-card__excerpt">Profil özetinizi ve istatistiklerinizi görsel olarak kaydedebilir veya paylaşabilirsiniz.</p>
+                </div>
+
+                <div class="content-card content-card--compact content-card--borderless">
+                  <h3 class="content-card__title">Veri dosyası yedekleme</h3>
+                  <p class="content-card__excerpt">Profil dışa aktarma ve yerel yedekleme seçenekleri veri dosyası formatında yedek oluşturur. Çalışma oturumları yedeklenmez.</p>
+                </div>
+
+              </div>
+
+              <div class="callout callout--note">
+                <p class="callout__label">Gizlilik</p>
+                <p class="callout__content">
+                  Verilerinizin nasıl toplandığı ve korunduğu hakkında ayrıntılı bilgi için
+                  <a href="privacy.html">Gizlilik Politikası</a> sayfasına bakın.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 7. Contact Support ──────────────────────────────────────── -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container container--narrow">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">İletişim</p>
+                <h2 class="section-title__heading" id="contact-heading">Destek Ekibiyle İletişim</h2>
+                <p class="section-title__subtitle">
+                  Sorununuzu yukarıdaki adımlarla çözemediyseniz bize yazın.
+                </p>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="card card--flat">
+                <div class="card__body">
+                  <dl class="stack stack--4">
+                    <div>
+                      <dt class="badge badge--neutral">Geliştirici</dt>
+                      <dd class="card__description">[Geliştirici Adı — yakında]</dd>
+                    </div>
+                    <div>
+                      <dt class="badge badge--neutral">Destek E-postası</dt>
+                      <dd class="card__description">
+                        <a href="mailto:support@korteks.app">support@korteks.app</a>
+                        <span class="text-sm"> (placeholder)</span>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt class="badge badge--neutral">Web Sitesi</dt>
+                      <dd class="card__description">
+                        <a href="#" class="footer-links__link--external" aria-disabled="true">[GitHub / Web Sitesi — yakında]</a>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt class="badge badge--neutral">Yanıt Süresi</dt>
+                      <dd class="card__description">Hafta içi 2–3 iş günü içinde yanıt verilmeye çalışılır (placeholder).</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="callout callout--tip">
+                <p class="callout__label">E-postanıza ekleyin</p>
+                <p class="callout__content">Daha hızlı yardım almak için mesajınıza şunları eklemenizi öneririz:</p>
+                <ul class="callout__content">
+                  <li>Uygulama sürümü (Ayarlar'da görüntülenir)</li>
+                  <li>iOS sürümü</li>
+                  <li>Cihaz modeli (ör. iPhone 15)</li>
+                  <li>Sorunun kısa açıklaması</li>
+                  <li>Sorunu tekrarlama adımları</li>
+                  <li>Mümkünse ekran görüntüleri</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 8. Related Pages ──────────────────────────────────────────── -->
+      <section class="section section--secondary" id="related" aria-labelledby="related-heading">
+        <div class="container">
+          <div class="section__inner">
+
+            <header class="section__header section__header--center">
+              <div class="section-title section-title--center">
+                <p class="section-title__eyebrow">Bağlantılar</p>
+                <h2 class="section-title__heading" id="related-heading">İlgili Sayfalar</h2>
+              </div>
+            </header>
+
+            <div class="section__content">
+              <div class="grid grid--3 grid--gap-lg">
+
+                <a href="index.html" class="feature-card feature-card--interactive feature-card--center">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Ana Sayfa</h3>
+                  <p class="feature-card__description">Korteks uygulaması hakkında genel bilgi ve özellikler.</p>
+                  <span class="feature-card__link">Sayfaya git</span>
+                </a>
+
+                <a href="privacy.html" class="feature-card feature-card--interactive feature-card--center">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Gizlilik Politikası</h3>
+                  <p class="feature-card__description">Verilerinizin nasıl toplandığı ve korunduğu.</p>
+                  <span class="feature-card__link">Sayfaya git</span>
+                </a>
+
+                <a href="terms.html" class="feature-card feature-card--interactive feature-card--center">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  </div>
+                  <h3 class="feature-card__title">Kullanım Koşulları</h3>
+                  <p class="feature-card__description">Uygulamayı kullanırken geçerli koşullar.</p>
+                  <span class="feature-card__link">Sayfaya git</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 9. Closing Callout ────────────────────────────────────────── -->
+      <section class="section section--compact" aria-label="Kapanış mesajı">
+        <div class="container container--narrow">
+          <div class="callout callout--neutral">
+            <p class="callout__title">Hazırlığınıza devam edin.</p>
+            <p class="callout__content">
+              Korteks, sınav hazırlığınızı düzenli tutmanıza yardımcı olmak için tasarlandı.
+              Denemelerinizi kaydedin, ilerlemenizi izleyin ve hedeflerinize odaklanın.
+              Başarılar dileriz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <!-- Site Footer -->
