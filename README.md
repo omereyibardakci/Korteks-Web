@@ -1,152 +1,83 @@
 # Korteks Web
 
-Official website for **Korteks**, an iOS app for LGS, YKS, KPSS, and TUS exam preparation — trial tracking, net calculation, topic analysis, study timer, and statistics.
+Korteks Web is the official website for the Korteks iOS application.
 
-**Live URL (planned):** [https://korteks.app](https://korteks.app)
+It contains:
 
----
+- Landing page
+- Privacy Policy
+- Support Center
+- Terms of Use
 
-## Overview
+## Live Website
 
-Korteks-Web is a static, production-ready marketing and legal site. It includes:
+[https://omereyibardakci.github.io/Korteks-Web/](https://omereyibardakci.github.io/Korteks-Web/)
 
-- Landing page with product overview, features, FAQ, and download CTA
-- Privacy Policy (`privacy.html`)
-- Support Center (`support.html`)
-- Terms of Use (`terms.html`)
-- Custom 404 page
+## Pages
 
-The site is designed with an Apple-inspired aesthetic: clean typography, generous spacing, light/dark themes, and progressive enhancement via vanilla JavaScript.
-
----
-
-## Folder Structure
-
-```
-Korteks-Web/
-├── index.html              # Landing page
-├── privacy.html            # Privacy Policy
-├── support.html            # Support Center
-├── terms.html              # Terms of Use
-├── 404.html                # Custom error page
-├── robots.txt              # Search engine directives
-├── sitemap.xml             # Sitemap for crawlers
-├── manifest.webmanifest    # Web app manifest
-├── browserconfig.xml       # Windows tile configuration
-├── favicon.svg             # Scalable favicon (root)
-├── assets/
-│   ├── css/                # Modular design system
-│   ├── js/                 # ES module interactions
-│   ├── icons/              # Favicons and PWA icons
-│   └── images/             # Screenshots and social preview
-├── README.md
-├── DEPLOYMENT.md
-├── QA_CHECKLIST.md
-├── PRODUCTION.md
-└── LICENSE
-```
-
----
+| Page | Description |
+|------|-------------|
+| Home | Product overview |
+| Privacy Policy | App privacy information |
+| Support | Help center |
+| Terms of Use | Terms and conditions |
 
 ## Technology
 
-| Layer | Stack |
-|-------|-------|
-| Markup | Semantic HTML5 |
-| Styles | Modular CSS (design tokens, no preprocessor) |
-| Scripts | Vanilla JavaScript (ES modules) |
-| Hosting | GitHub Pages (static) |
-| Build | None — no npm, bundler, or framework |
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES Modules)
+- GitHub Pages
 
-### JavaScript Modules
+## Project Structure
 
-| Module | Purpose |
-|--------|---------|
-| `main.js` | Entry point |
-| `theme.js` | Light / dark / system theme |
-| `navigation.js` | Mobile menu, FAQ, external links |
-| `scroll.js` | Smooth scroll, reading progress, back-to-top |
-| `animations.js` | Reveal animations, lazy loading |
-| `clipboard.js` | Copy-to-clipboard utilities |
-| `utils.js` | Shared helpers |
-
----
-
-## Running Locally
-
-No install step required. Serve the project root with any static file server:
-
-```bash
-# Python 3
-python3 -m http.server 8080
-
-# PHP
-php -S localhost:8080
+```
+Korteks-Web/
+├── index.html
+├── privacy.html
+├── support.html
+├── terms.html
+├── 404.html
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── icons/
+│   └── images/
+├── manifest.webmanifest
+├── sitemap.xml
+├── robots.txt
+└── LICENSE
 ```
 
-Then open [http://localhost:8080](http://localhost:8080).
+## Local Development
 
-> **Note:** ES modules require a local server — opening `index.html` directly via `file://` will not load JavaScript modules.
+Clone the repository:
 
----
+```bash
+git clone https://github.com/omereyibardakci/Korteks-Web.git
+cd Korteks-Web
+```
 
-## GitHub Pages Deployment
+Open the folder in Cursor or VS Code, then open `index.html` in your browser.
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step instructions including custom domain setup, HTTPS, and cache refresh.
+For full functionality (ES modules), run a simple local server:
 
-Quick summary:
+```bash
+python3 -m http.server 8080
+```
 
-1. Push the repository to GitHub
-2. Enable **GitHub Pages** → source: `main` branch, root folder
-3. (Optional) Configure custom domain `korteks.app` in repository settings
-4. Verify `https://korteks.app/sitemap.xml` and `robots.txt` are accessible
+Then visit [http://localhost:8080](http://localhost:8080).
 
----
+## Deployment
 
-## Icon & Asset Placeholders
-
-Current icon and social preview files are **placeholders**. Replace with final brand assets before public launch:
-
-| File | Size | Purpose |
-|------|------|---------|
-| `favicon.svg` | Scalable | Modern browsers |
-| `assets/icons/favicon.ico` | Multi-size | Legacy browsers |
-| `assets/icons/favicon-16x16.png` | 16×16 | Tab icon |
-| `assets/icons/favicon-32x32.png` | 32×32 | Tab icon |
-| `assets/icons/apple-touch-icon.png` | 180×180 | iOS home screen |
-| `assets/icons/icon-192.png` | 192×192 | PWA / Android |
-| `assets/icons/icon-512.png` | 512×512 | PWA splash |
-| `assets/images/og/korteks-og.png` | 1200×630 | Open Graph / Twitter Card |
-
-See [assets/icons/README.md](assets/icons/README.md) for platform-specific guidance.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Copyright © 2026 **Ömer Eyibardakçı**
-
----
+This project is deployed using GitHub Pages from the repository root.
 
 ## Developer
 
 **Ömer Eyibardakçı**
 
-- Website: [https://korteks.app](https://korteks.app)
-- Support: [support.html](support.html) *(email placeholder — see PRODUCTION.md)*
+Contact: [korteks.support@gmail.com](mailto:korteks.support@gmail.com)
 
----
+## License
 
-## Future Improvements
-
-- Replace placeholder icons and OG image with final brand assets
-- Add real App Store URL when the app is published
-- Replace screenshot placeholders on the landing page
-- Add real contact email and social media links
-- Submit sitemap to Google Search Console and Bing Webmaster Tools
-- Add structured data (JSON-LD) for the mobile app
-- Localize legal pages to English
-
-See [PRODUCTION.md](PRODUCTION.md) for the full release checklist.
+MIT License — see [LICENSE](LICENSE) for details.
