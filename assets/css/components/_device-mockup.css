@@ -57,9 +57,11 @@
 .device-mockup__screen {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 9 / 16;
+  /* Match production screenshot ratio (1206×2622) — modern iPhone display */
+  aspect-ratio: 1206 / 2622;
   background-color: var(--color-bg-secondary);
   border-radius: 2.25rem;
+  isolation: isolate;
 }
 
 .device-mockup__screen img,
@@ -70,7 +72,10 @@
 }
 
 .device-mockup__screen img {
-  object-fit: cover;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  object-fit: contain;
   object-position: top center;
 }
 
