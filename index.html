@@ -269,8 +269,8 @@
                       hedeflerinizi takip edebilir ve ilerlemenizi başarımlarla kayıt altına alabilirsiniz.
                     </p>
                     <p>
-                      Uygulama; Firebase Authentication ile güvenli oturum açma, Firestore ile
-                      bulut senkronizasyonu ve çalışma oturumlarının cihazda yerel olarak saklanması
+                      Uygulama; e-posta/şifre, Apple veya Google ile güvenli oturum açma, Firestore
+                      ile bulut senkronizasyonu ve çalışma oturumlarının cihazda yerel olarak saklanması
                       gibi özellikler sunar. Apple Human Interface Guidelines ile uyumlu arayüzü,
                       Türkçe ve English dil desteğiyle birlikte gelir.
                     </p>
@@ -442,6 +442,25 @@
                   <p class="feature-card__description">
                     Son denemelerinizi, hedeflerinizi ve çalışma özetinizi tek bir ekranda
                     görün. Hazırlık durumunuzu hızlıca değerlendirin.
+                  </p>
+                </article>
+
+                <!-- AI Destekli Özellikler -->
+                <article class="feature-card">
+                  <div class="feature-card__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/>
+                      <path d="M12 6v6l4 2"/>
+                      <circle cx="12" cy="12" r="1"/>
+                    </svg>
+                  </div>
+                  <h3 class="feature-card__title">
+                    AI Destekli Özellikler
+                    <span class="badge badge--accent badge--sm">Pro</span>
+                  </h3>
+                  <p class="feature-card__description">
+                    AI destekli koçluk ve hata nedeni analiziyle hazırlık sürecinizde ek destek alın.
+                    Premium özellikler arasında AI koçluk ve gelişmiş analiz yer alır.
                   </p>
                 </article>
 
@@ -638,8 +657,8 @@
                   <span class="badge badge--accent badge--lg" aria-hidden="true">1</span>
                   <h3 class="feature-card__title">Hesap Oluşturun</h3>
                   <p class="feature-card__description">
-                    E-posta ve şifre ile Firebase Authentication üzerinden güvenli bir
-                    hesap oluşturun.
+                    E-posta/şifre, Apple veya Google hesabınızla güvenli bir hesap
+                    oluşturun ve oturum açın.
                   </p>
                 </li>
 
@@ -697,10 +716,10 @@
               <div class="grid grid--2 grid--gap-sm">
 
                 <div class="content-card content-card--borderless">
-                  <h3 class="content-card__title">E-posta ve şifre ile kimlik doğrulama</h3>
+                  <h3 class="content-card__title">Güvenli kimlik doğrulama</h3>
                   <p class="content-card__excerpt">
-                    Hesabınıza Firebase Authentication ile e-posta ve şifre kullanarak güvenli
-                    şekilde giriş yaparsınız.
+                    E-posta/şifre, Apple ile Giriş Yap veya Google ile Giriş Yap seçenekleriyle
+                    hesabınıza güvenli şekilde giriş yapabilirsiniz.
                   </p>
                 </div>
 
@@ -721,10 +740,10 @@
                 </div>
 
                 <div class="content-card content-card--borderless">
-                  <h3 class="content-card__title">Reklam ve izleme yok</h3>
+                  <h3 class="content-card__title">Gizlilik odaklı</h3>
                   <p class="content-card__excerpt">
-                    Uygulamada reklam SDK'si, üçüncü taraf izleme, analitik araçları veya
-                    kişisel veri satışı bulunmaz.
+                    Uygulamada reklam SDK'si kullanılmaz ve kişisel verileriniz satılmaz.
+                    Uygulama, ürün ve hizmetleri iyileştirmek amacıyla Firebase Analytics kullanır.
                   </p>
                 </div>
 
@@ -860,10 +879,10 @@
                   </summary>
                   <div class="accordion__panel">
                     <p>
-                      Deneme ve profil verilerinizin cihazlar arasında senkronize
-                      edilmesi için Firebase Authentication ile e-posta ve şifre kullanarak
-                      bir hesap oluşturmanız gerekir. Çalışma zamanlayıcısı hesap olmadan da
-                      kullanılabilir; ancak oturumlar yalnızca o cihazda kalır.
+                      Deneme ve profil verilerinizin cihazlar arasında senkronize edilmesi için
+                      bir hesap oluşturmanız gerekir. E-posta/şifre, Apple veya Google hesabınızla
+                      oturum açabilirsiniz. Çalışma zamanlayıcısı hesap olmadan da kullanılabilir;
+                      ancak oturumlar yalnızca o cihazda kalır.
                     </p>
                   </div>
                 </details>
@@ -924,8 +943,26 @@
                   </summary>
                   <div class="accordion__panel">
                     <p>
-                      Hayır. Korteks'te reklam SDK'si, üçüncü taraf izleme veya analitik
-                      araçları bulunmaz. Kişisel verileriniz satılmaz.
+                      Hayır. Korteks'te reklam SDK'si kullanılmaz ve kişisel verileriniz satılmaz.
+                      Uygulama, ürün ve hizmet iyileştirmeleri amacıyla Firebase Analytics kullanır;
+                      ancak reklam amaçlı izleme yapılmaz.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="accordion__item">
+                  <summary class="accordion__trigger">
+                    Korteks Pro nedir?
+                    <svg class="accordion__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </summary>
+                  <div class="accordion__panel">
+                    <p>
+                      Korteks Pro, AI Koçluk, AI destekli hata nedeni analizi ve Gelişmiş İstatistik
+                      Dışa Aktarma gibi premium özelliklere erişim sağlayan abonelik hizmetidir.
+                      Haftalık, aylık ve yıllık abonelik seçenekleri sunulur. Abonelikler App Store
+                      üzerinden yönetilir.
                     </p>
                   </div>
                 </details>
@@ -1029,7 +1066,7 @@
                 <a href="https://apps.apple.com/us/app/korteks-deneme-takip-analiz/id6778207399" class="footer-links__link footer-links__link--external" target="_blank" rel="noopener noreferrer">App Store</a>
               </li>
               <li class="footer-links__item">
-                <span class="footer-links__link">Sürüm 1.7.3</span>
+                <span class="footer-links__link">Sürüm 2.0.0</span>
               </li>
               <li class="footer-links__item">
                 <span class="footer-links__link">iOS 17.0+</span>
