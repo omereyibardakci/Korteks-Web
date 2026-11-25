@@ -1,6 +1,6 @@
 # Korteks — Screenshot Plan
 
-Complete capture schedule for all visual assets derived from the real Korteks iOS app (v1.0.0, iOS 17+).
+Complete capture schedule for all visual assets derived from the real Korteks iOS app (v2.2.5, iOS 17+).
 
 **No fake screens.** Every asset listed below must be captured from the production app.
 

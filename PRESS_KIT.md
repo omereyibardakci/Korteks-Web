@@ -3,7 +3,7 @@
 Media resources for journalists, bloggers, and App Store featuring.
 
 **Status:** Draft — placeholders marked explicitly  
-**Version:** Website 1.0.0 / App 1.0.0
+**Version:** Website 1.0.0 / App 2.2.5
 
 ---
 
@@ -11,12 +11,12 @@ Media resources for journalists, bloggers, and App Store featuring.
 
 | Field | Value |
 |-------|-------|
-| **App name** | Korteks |
+| **App name** | Korteks: YKS-KPSS-LGS Analiz |
 | **Platform** | iOS 17.0+ |
 | **Category** | Education / Productivity |
 | **Languages** | Türkçe, English |
 | **Exams supported** | LGS, YKS, KPSS, TUS |
-| **Price** | Free (v1.0.0 — no in-app purchases) |
+| **Price** | Ücretsiz indirme; isteğe bağlı Korteks Pro abonelik (App Store) |
 | **Website** | https://korteks.app |
 | **Developer** | Ömer Eyibardakçı |
 

@@ -1,7 +1,7 @@
 {
-  "name": "Korteks — LGS, YKS, KPSS ve TUS İçin Deneme Takibi",
+  "name": "Korteks: YKS-KPSS-LGS Analiz",
   "short_name": "Korteks",
-  "description": "LGS, YKS, KPSS ve TUS sınavlarına hazırlanan adaylar için deneme takibi, net hesaplama, konu analizi ve istatistik sunan iOS uygulamasının resmi web sitesi.",
+  "description": "Korteks: YKS-KPSS-LGS Analiz — LGS, YKS, KPSS ve TUS sınavlarına hazırlanan adaylar için deneme takibi, net hesaplama, konu analizi ve istatistik sunan iOS uygulamasının resmi web sitesi.",
   "lang": "tr",
   "dir": "ltr",
   "start_url": "/",

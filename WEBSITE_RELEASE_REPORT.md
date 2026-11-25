@@ -194,7 +194,7 @@ No unused CSS or JS modules identified; all JS modules are imported via `main.js
 | `robots.txt` | ✅ Present |
 | `sitemap.xml` | ✅ 4 indexable pages |
 | `404.html` | ✅ Custom page with `noindex` |
-| Favicon set | ✅ Complete (`?v=3`) |
+| Favicon set | ✅ Complete (`?v=4`) |
 | Social preview (`korteks-og.png`) | ✅ 1200×630 |
 | Custom domain (`CNAME`) | ❌ Not in repo — add when pointing `korteks.app` to GitHub Pages |
 

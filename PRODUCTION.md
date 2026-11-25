@@ -9,7 +9,7 @@ Internal reference for release management and placeholder tracking.
 | Field | Value |
 |-------|-------|
 | Website version | 1.0.0 |
-| App version referenced | 1.0.0 |
+| App version referenced | 2.2.5 |
 | Release date | 2026-07-25 |
 | Target domain | https://korteks.app |
 
